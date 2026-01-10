@@ -75,22 +75,26 @@
 
 ### 📂 Тестовые артефакты (Мое портфолио):
 
-Все мои практические работы собраны в едином документе Google Sheets. Вы можете переходить сразу к нужному разделу:
+Все мои практические работы собраны в едином документе Google Sheets.
 
 #### 1. 📑 Тестовая документация (Web)
 > *Проект: Интернет-магазин DemoShopping*
-* **[🔗 Открыть Чек-листы и Тест-кейсы](https://docs.google.com/spreadsheets/d/10L3WmvIuV3qYr8N86WoHXyFqlFgBHpgU7K7eCbUssYk/edit?pli=1&gid=0#gid=0)** — Ссылка на вкладку с тест-кейсами. Включает:
-    * Проверку регистрации и корзины.
-    * Таблицы граничных значений.
-    * Баг-репорты.
+* **[🔗 Открыть Web-документацию](https://docs.google.com/spreadsheets/d/10L3WmvIuV3qYr8N86WoHXyFqlFgBHpgU7K7eCbUssYk/edit?pli=1&gid=0#gid=0)** — Включает в себя вкладки:
+    * **Чек-листы и Тест-кейсы** (регистрация, корзина).
+    * **Тестовые данные** (валидация, фильтрация).
+    * **Баг-репорты** (найденные дефекты).
 
-#### 2. 💾 Базы данных (SQL)
-> *Примеры сложных запросов*
-* **[🔗 Открыть SQL запросы](https://docs.google.com/spreadsheets/d/10L3WmvIuV3qYr8N86WoHXyFqlFgBHpgU7K7eCbUssYk/edit?pli=1&gid=1293622627#gid=1293622627)** — Ссылка на вкладку с примерами кода (JOIN, UNION, HAVING).
+#### 2. 💾 Базы данных (SQL & NoSQL)
+> *Запросы к MySQL и MongoDB*
+* **[🔗 Открыть примеры запросов](https://docs.google.com/spreadsheets/d/10L3WmvIuV3qYr8N86WoHXyFqlFgBHpgU7K7eCbUssYk/edit?pli=1&gid=1293622627#gid=1293622627)** — Включает вкладки:
+    * **MySQL:** Примеры `JOIN`, `UNION`, `SELECT`.
+    * **MongoDB:** Примеры поиска документов и фильтрации.
 
 #### 3. 📱 Мобильное тестирование
 > *Проект: Android-приложение "Shopping List"*
-* **[🔗 Открыть Mobile Test Plan](https://docs.google.com/spreadsheets/d/10L3WmvIuV3qYr8N86WoHXyFqlFgBHpgU7K7eCbUssYk/edit?pli=1&gid=292251871#gid=292251871)** — Ссылка на вкладку с тестированием мобильного приложения.
+* **[🔗 Открыть Mobile-документацию](https://docs.google.com/spreadsheets/d/10L3WmvIuV3qYr8N86WoHXyFqlFgBHpgU7K7eCbUssYk/edit?pli=1&gid=292251871#gid=292251871)** — Включает вкладки:
+    * **Mobile Чек-лист** (список проверок).
+    * **Mobile Тест-План** (стратегия тестирования).
 
 ---
 
