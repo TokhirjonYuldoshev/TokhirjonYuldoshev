@@ -70,7 +70,27 @@
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" title="bash" alt="bash" width="40" height="40"/>&nbsp;
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" title="vscode" alt="vscode" width="40" height="40"/>&nbsp;
 </div>
+---
 
+### 📂 Тестовые артефакты (Мое портфолио):
+
+Все мои практические работы собраны в едином документе. Вы можете ознакомиться с ними по разделам:
+
+#### 1. 📑 Тестовая документация (Web)
+> *Проект: Интернет-магазин DemoShopping*
+* **[🔗 Открыть портфолио (Google Sheets)](https://docs.google.com/spreadsheets/d/10L3WmvIuV3qYr8N86WoHXyFqlFgBHpgU7K7eCbUssYk/edit?usp=sharing)** — Включает в себя:
+    * **Чек-листы и Тест-кейсы:** Регистрация, Корзина, Фильтры, Каталог.
+    * **Баг-репорты:** Оформление дефектов с приоритетами и шагами (Steps to Reproduce).
+    * **Тестовые данные:** Таблицы классов эквивалентности и граничных значений.
+
+#### 2. 💾 Базы данных (SQL & NoSQL)
+> *Примеры написания сложных запросов*
+* **[🔗 SQL Queries (MySQL)](https://docs.google.com/spreadsheets/d/10L3WmvIuV3qYr8N86WoHXyFqlFgBHpgU7K7eCbUssYk/edit?usp=sharing)** — Использование `JOIN`, `UNION`, `GROUP BY`, `HAVING`, вложенных запросов.
+* **[🔗 MongoDB](https://docs.google.com/spreadsheets/d/10L3WmvIuV3qYr8N86WoHXyFqlFgBHpgU7K7eCbUssYk/edit?usp=sharing)** — Работа с коллекциями, поиск документов и фильтрация.
+
+#### 3. 📱 Мобильное тестирование
+> *Проект: Android-приложение "Shopping List"*
+* **[🔗 Mobile Test Plan & Checklist](https://docs.google.com/spreadsheets/d/10L3WmvIuV3qYr8N86WoHXyFqlFgBHpgU7K7eCbUssYk/edit?usp=sharing)** — Тестирование установки, прерываний, UI/UX и функционала.
 ---
 
 ![Visitor Badge](https://visitor-badge.laobi.icu/badge?page_id=TokhirjonYuldoshev)
