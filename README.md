@@ -75,26 +75,25 @@
 
 ### 📂 Тестовые артефакты (Мое портфолио):
 
-Все мои практические работы собраны в едином документе Google Sheets.
-
 #### 1. 📑 Тестовая документация (Web)
 > *Проект: Интернет-магазин DemoShopping*
-* **[🔗 Открыть Web-документацию](https://docs.google.com/spreadsheets/d/10L3WmvIuV3qYr8N86WoHXyFqlFgBHpgU7K7eCbUssYk/edit?pli=1&gid=0#gid=0)** — Включает в себя вкладки:
-    * **Чек-листы и Тест-кейсы** (регистрация, корзина).
-    * **Тестовые данные** (валидация, фильтрация).
-    * **Баг-репорты** (найденные дефекты).
+* **[🔗 Открыть Web-документацию (Google Sheets)](https://docs.google.com/spreadsheets/d/10L3WmvIuV3qYr8N86WoHXyFqlFgBHpgU7K7eCbUssYk/edit?pli=1&gid=0#gid=0)**
+    * Чек-листы, Тест-кейсы, Баг-репорты.
 
-#### 2. 💾 Базы данных (SQL & NoSQL)
-> *Запросы к MySQL и MongoDB*
-* **[🔗 Открыть примеры запросов](https://docs.google.com/spreadsheets/d/10L3WmvIuV3qYr8N86WoHXyFqlFgBHpgU7K7eCbUssYk/edit?pli=1&gid=1293622627#gid=1293622627)** — Включает вкладки:
-    * **MySQL:** Примеры `JOIN`, `UNION`, `SELECT`.
-    * **MongoDB:** Примеры поиска документов и фильтрации.
+#### 2. 🚀 API Тестирование (Postman)
+> *Коллекции запросов с автотестами*
+* **[📄 Скачать PetStore Collection](./PetStore.postman_collection.json)**
+    * Тестирование методов: `User`, `Pet`, `Store` (CRUD операции).
+* **[📄 Скачать DemoShopping Collection](./DemoShopping.postman_collection.json)**
+    * Тестирование интернет-магазина: `Products`, `Cart`, `Orders`, `Payment`.
 
-#### 3. 📱 Мобильное тестирование
-> *Проект: Android-приложение "Shopping List"*
-* **[🔗 Открыть Mobile-документацию](https://docs.google.com/spreadsheets/d/10L3WmvIuV3qYr8N86WoHXyFqlFgBHpgU7K7eCbUssYk/edit?pli=1&gid=292251871#gid=292251871)** — Включает вкладки:
-    * **Mobile Чек-лист** (список проверок).
-    * **Mobile Тест-План** (стратегия тестирования).
+#### 3. 💾 Базы данных (SQL & NoSQL)
+* **[🔗 Открыть примеры запросов](https://docs.google.com/spreadsheets/d/10L3WmvIuV3qYr8N86WoHXyFqlFgBHpgU7K7eCbUssYk/edit?pli=1&gid=1293622627#gid=1293622627)**
+    * MySQL (JOIN, UNION) и MongoDB.
+
+#### 4. 📱 Мобильное тестирование
+* **[🔗 Открыть Mobile-документацию](https://docs.google.com/spreadsheets/d/10L3WmvIuV3qYr8N86WoHXyFqlFgBHpgU7K7eCbUssYk/edit?pli=1&gid=292251871#gid=292251871)**
+    * Тест-план и чек-лист для Android.
 
 ---
 
