@@ -40,7 +40,7 @@
 **📁 Тест-менеджмент:**
 <div>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg" title="jira" alt="jira" width="40" height="40"/>&nbsp;
-  <img src="https://cdn.simpleicons.org/youtrack/000000" title="youtrack" alt="youtrack" width="40" height="40"/>&nbsp;
+  <img src="https://www.vectorlogo.zone/logos/jetbrains-youtrack/jetbrains-youtrack-icon.svg" title="youtrack" alt="youtrack" width="40" height="40"/>&nbsp;
   <img src="https://luna1.co/eb0187.png" title="qase" alt="qase" width="40" height="40"/>&nbsp;
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" title="figma" alt="figma" width="40" height="40"/>&nbsp;
 </div>
@@ -49,7 +49,7 @@
 <div>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/chrome/chrome-original.svg" title="chrome" alt="chrome" width="40" height="40"/>&nbsp;
   <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" title="postman" alt="postman" width="40" height="40"/>&nbsp;
-  <img src="https://cdn.icon-icons.com/icons2/2699/PNG/512/smartbear_soapui_logo_icon_169335.png" title="soapui" alt="soapui" width="40" height="40"/>&nbsp;
+  <img src="https://www.vectorlogo.zone/logos/soapui/soapui-icon.svg" title="soapui" alt="soapui" width="40" height="40"/>&nbsp;
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" title="html5" alt="html5" width="40" height="40"/>&nbsp;
 </div>
 
