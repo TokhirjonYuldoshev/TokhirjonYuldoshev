@@ -1,4 +1,4 @@
-# Тохиржон Йулдошев 👋
+# Тохиржон Йулдошев
 
 ## QA Engineer | QA Automation
 
@@ -6,11 +6,11 @@
 
 QA Engineer focused on **test automation, API testing and CI quality engineering**.
 
-📍 Санкт-Петербург · рассматриваю удалённый / гибридный / офисный формат
+Санкт-Петербург · рассматриваю удалённый / гибридный / офисный формат
 
 Работаю с ручным и автоматизированным тестированием Web/API. Основное направление автоматизации — **Playwright + TypeScript**. Строю воспроизводимые CI-пайплайны, работаю с SQL, Docker, Jenkins и автоматизированной отчётностью.
 
-## ⭐ Portfolio highlights
+##  Portfolio highlights
 
 | Область | Что реализовано |
 | --- | --- |
@@ -28,7 +28,7 @@ QA Engineer focused on **test automation, API testing and CI quality engineering
 
 ---
 
-## 🚀 Ключевые проекты
+##  Ключевые проекты
 
 ### 1. [PomidorQA QA Automation](https://github.com/TokhirjonYuldoshev/pomidorqa-tests)
 
@@ -71,7 +71,7 @@ QA monitoring для проверки **доступности и возможн
 ---
 
 <details>
-<summary><b>🧪 Manual QA / API / SQL / Mobile portfolio</b></summary>
+<summary><b> Manual QA / API / SQL / Mobile portfolio</b></summary>
 
 ### Web testing — DemoShopping
 
@@ -106,14 +106,14 @@ SQL: JOIN, подзапросы, агрегаты. Практика с PostgreSQ
 
 ---
 
-## 🧰 Стек
+##  Стек
 
 `Playwright` `TypeScript` `Postman` `REST API` `SQL` `PostgreSQL` `MySQL` `MongoDB` `Git` `GitHub Actions` `Docker` `Jenkins` `Allure` `DevTools` `Jira` `YouTrack` `Qase` `TestRail` `Charles Proxy`
 
 ---
 
 <details>
-<summary><b>🎓 Обучение и образование</b></summary>
+<summary><b> Обучение и образование</b></summary>
 
 ### QA / AQA
 
@@ -133,7 +133,7 @@ SQL: JOIN, подзапросы, агрегаты. Практика с PostgreSQ
 
 ---
 
-## 📫 Контакты
+##  Контакты
 
 - **Email:** [toxir.yuldoshev1983@gmail.com](mailto:toxir.yuldoshev1983@gmail.com)
 - **Telegram:** [@TokhirjonYuldoshev](https://t.me/TokhirjonYuldoshev)
