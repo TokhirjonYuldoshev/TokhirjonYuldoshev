@@ -50,10 +50,10 @@ QA Engineer с фокусом на **автоматизации тестиров
 
 ### 2. [Гибридный QA-мониторинг PostgreSQL](https://github.com/TokhirjonYuldoshev/qa-docker-monitor)
 
-Проект мониторинга, где health signal основан не на `ping`, а на **реальной возможности записи в PostgreSQL**.
+Проект мониторинга, где health signal основан не на `ping`, а на **реальной записи в PostgreSQL с последующим read-back**.
 
-- PostgreSQL 16 service container и scheduled SQL write-health checks;
-- реальный `CREATE/INSERT` как source of truth;
+- PostgreSQL 16 service container и scheduled SQL write/read-health checks;
+- уникальный run marker, `CREATE / INSERT / SELECT` и exact read-back assertion как source of truth;
 - Windows/Jenkins contract tests с изолированными command doubles;
 - `CI / Required gate` агрегирует обязательные monitoring signals;
 - структурированный GitHub Actions Summary;
