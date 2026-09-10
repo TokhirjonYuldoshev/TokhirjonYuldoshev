@@ -18,7 +18,7 @@ QA Engineer с фокусом на **автоматизации тестиров
 | Cross-browser CI | Chromium / Firefox / WebKit, GitHub Actions, `workers=1`, `retries=0` для live E2E |
 | Reporting & Diagnostics | Allure, Playwright HTML, JUnit XML, trace, screenshots, video, failure artifacts, Actions Summary |
 | Non-functional QA | Accessibility (axe-core), Lighthouse, Visual Regression, security и stability checks |
-| Quality governance | protected `main`, strict required checks, risk-based merge policy, dependency maintenance |
+| Quality governance | protected `main`, strict required checks, risk-based Test Strategy, merge policy, dependency maintenance |
 | Infrastructure | Docker, Jenkins, PostgreSQL, container runtime smoke, non-root policy, Trivy, Telegram observability |
 
 ### Live CI status
@@ -44,6 +44,7 @@ QA Engineer с фокусом на **автоматизации тестиров
 - Accessibility Audit, Lighthouse и Visual Regression;
 - security gates, controlled Dependabot maintenance и Telegram notifications;
 - protected `main` со strict required checks и risk-based QA quality-gate policy;
+- отдельная [Risk-Based Test Strategy](https://github.com/TokhirjonYuldoshev/pomidorqa-tests/blob/main/docs/test-strategy.md): risk model, ownership boundaries, failure triage, entry/exit criteria и quality metrics;
 - manual-only Registration Contract Smoke для реального HTTP-контракта регистрации.
 
 **Стек:** Playwright · TypeScript · Node.js · GitHub Actions · Allure · axe-core · Lighthouse · Telegram Bot API
