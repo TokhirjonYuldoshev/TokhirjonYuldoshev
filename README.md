@@ -16,10 +16,10 @@ QA Engineer с фокусом на **автоматизации тестиров
 | --- | --- |
 | Test Automation | Playwright + TypeScript, Unit / API / E2E, POM, fixtures, helpers, test-data factories |
 | Cross-browser CI | Chromium / Firefox / WebKit, GitHub Actions, `workers=1`, `retries=0` для live E2E |
-| Reporting & Diagnostics | Allure, Playwright HTML, trace, screenshots, video, failure artifacts, Actions Summary |
+| Reporting & Diagnostics | Allure, Playwright HTML, JUnit XML, trace, screenshots, video, failure artifacts, Actions Summary |
 | Non-functional QA | Accessibility (axe-core), Lighthouse, Visual Regression, security и stability checks |
 | Quality governance | protected `main`, strict required checks, risk-based merge policy, dependency maintenance |
-| Infrastructure | Docker, Jenkins, PostgreSQL, container runtime smoke, Trivy, Telegram observability |
+| Infrastructure | Docker, Jenkins, PostgreSQL, container runtime smoke, non-root policy, Trivy, Telegram observability |
 
 ### Live CI status
 
@@ -52,7 +52,7 @@ QA Engineer с фокусом на **автоматизации тестиров
 
 Проект мониторинга, где health signal основан не на `ping`, а на **реальной записи в PostgreSQL с последующим read-back**.
 
-- PostgreSQL 16 service container и scheduled SQL write/read-health checks;
+- PostgreSQL 16 service container и scheduled SQL write/read health checks;
 - уникальный run marker, `CREATE / INSERT / SELECT` и exact read-back assertion как source of truth;
 - Windows/Jenkins contract tests с изолированными command doubles;
 - `CI / Required gate` агрегирует обязательные monitoring signals;
@@ -67,12 +67,13 @@ QA Engineer с фокусом на **автоматизации тестиров
 
 Компактный проект, сфокусированный на **pipeline design и независимых quality gates**, а не на искусственном количестве тестов.
 
-- GitHub Actions: Flake8, Pytest, Docker build + **container runtime smoke**;
+- GitHub Actions: Flake8, Pytest с JUnit evidence, Docker build + **container runtime smoke**;
+- Docker CI отдельно подтверждает declared non-root runtime user;
 - Trivy container-security gate блокирует fixable `CRITICAL` vulnerabilities;
 - независимые checks агрегируются в стабильный `CI / Required gate`;
 - Python 3.12 baseline, non-root Docker runtime и pinned development dependencies;
 - controlled Dependabot updates для Python, GitHub Actions и Docker base image;
-- Jenkins Declarative Pipeline: lint → tests → build → runtime smoke → Docker Hub push;
+- Jenkins Declarative Pipeline: lint → tests → build → runtime smoke, Docker Hub publish только из `main`;
 - Telegram CI observability с русским структурированным итогом и прямой ссылкой на run;
 - manual-only Telegram diagnostics;
 - notification transport не подменяет реальный build/test/security signal.
