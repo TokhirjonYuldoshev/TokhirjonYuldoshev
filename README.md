@@ -61,12 +61,13 @@ QA monitoring для проверки **доступности и возможн
 Компактный CI/Docker pet-project с независимыми quality gates:
 
 - GitHub Actions: Flake8, Pytest, Docker build и **container runtime smoke**;
+- независимые checks агрегируются в стабильный **`CI / Required gate`** для branch protection;
+- Python 3.12 baseline, pinned development dependencies и контролируемые Dependabot updates;
 - Jenkins Declarative Pipeline: lint → tests → build → runtime smoke → Docker Hub push;
-- pinned development dependencies и воспроизводимый CI setup;
 - Jenkins Credentials, гарантированная cleanup-попытка и Telegram build notifications;
 - notification transport не подменяет реальный build/test signal.
 
-**Стек:** Python · Pytest · Flake8 · Docker · Jenkins · GitHub Actions · Docker Hub
+**Стек:** Python 3.12 · Pytest · Flake8 · Docker · Jenkins · GitHub Actions · Docker Hub
 
 ---
 
@@ -108,7 +109,7 @@ SQL: JOIN, подзапросы, агрегаты. Практика с PostgreSQ
 
 ##  Стек
 
-`Playwright` `TypeScript` `Postman` `REST API` `SQL` `PostgreSQL` `MySQL` `MongoDB` `Git` `GitHub Actions` `Docker` `Jenkins` `Allure` `DevTools` `Jira` `YouTrack` `Qase` `TestRail` `Charles Proxy`
+`Playwright` `TypeScript` `Postman` `REST API` `SQL` `PostgreSQL` `MySQL` `MongoDB` `Git` `GitHub Actions` `Docker` `Jenkins` `Python` `Pytest` `Allure` `DevTools` `Jira` `YouTrack` `Qase` `TestRail` `Charles Proxy`
 
 ---
 
