@@ -18,7 +18,7 @@ QA Engineer focused on **test automation, API testing and CI quality engineering
 | Cross-browser CI | Chromium / Firefox / WebKit, GitHub Actions, `retries=0` |
 | Reporting & Diagnostics | Allure, Playwright HTML, trace, screenshots, video, failure artifacts |
 | Non-functional QA | Accessibility (axe-core), Lighthouse, Visual Regression, security и stability checks |
-| Infrastructure | Docker, Jenkins, PostgreSQL, GitHub Actions, Telegram Bot API |
+| Infrastructure | Docker, Jenkins, PostgreSQL, GitHub Actions, container runtime smoke, Telegram Bot API |
 
 ---
 
@@ -42,24 +42,25 @@ QA Engineer focused on **test automation, API testing and CI quality engineering
 
 QA monitoring для проверки **доступности и возможности записи в PostgreSQL**:
 
-- PostgreSQL service container в GitHub Actions;
-- scheduled SQL health checks;
-- Docker + Windows/Jenkins-compatible monitoring;
-- Telegram alerts на success/failure.
+- PostgreSQL service container и scheduled SQL write-health checks в GitHub Actions;
+- реальный `CREATE/INSERT` вместо поверхностной проверки порта;
+- GitHub Actions summary и явные failure semantics;
+- health signal отделён от Telegram notification transport;
+- Docker + Windows/Jenkins-compatible monitoring.
 
 **Стек:** PostgreSQL · Docker · GitHub Actions · Jenkins · Telegram Bot API
 
 ### 3. [Jenkins + Docker CI Pipeline](https://github.com/TokhirjonYuldoshev/my-docker-project)
 
-Компактный CI/Docker pet-project:
+Компактный CI/Docker pet-project с независимыми quality gates:
 
-- Python + Pytest;
-- Flake8;
-- Jenkins Declarative Pipeline;
-- Docker build и публикация image в Docker Hub;
-- Jenkins Credentials и Telegram build notifications.
+- GitHub Actions: Flake8, Pytest, Docker build и **container runtime smoke**;
+- Jenkins Declarative Pipeline: lint → tests → build → runtime smoke → Docker Hub push;
+- pinned development dependencies и воспроизводимый CI setup;
+- Jenkins Credentials, гарантированная cleanup-попытка и Telegram build notifications;
+- notification transport не подменяет реальный build/test signal.
 
-**Стек:** Python · Pytest · Flake8 · Docker · Jenkins · Docker Hub
+**Стек:** Python · Pytest · Flake8 · Docker · Jenkins · GitHub Actions · Docker Hub
 
 ---
 
