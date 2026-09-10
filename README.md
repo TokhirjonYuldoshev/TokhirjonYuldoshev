@@ -1,30 +1,24 @@
-# Привет, меня зовут Тохиржон 👋
+# Тохиржон Йулдошев 👋
 
 ## QA Engineer | QA Automation
 
 **Playwright · TypeScript · API · SQL · GitHub Actions · Docker · Jenkins**
 
-Занимаюсь ручным и автоматизированным тестированием Web/API. Пишу автотесты на **Playwright + TypeScript**, работаю с REST API, SQL и DevTools, строю CI-пайплайны в GitHub Actions и Jenkins, использую Docker и автоматизированную отчётность.
+QA Engineer focused on **test automation, API testing and CI quality engineering**.
 
-В портфолио — проекты с **Unit / API / E2E**, cross-browser testing, Allure, accessibility, Lighthouse, visual regression, security и stability-проверками.
+📍 Санкт-Петербург · рассматриваю удалённый / гибридный / офисный формат
 
-Сейчас развиваюсь в направлении **QA Automation** и рассматриваю позиции **QA Engineer / QA Automation Engineer**.
+Работаю с ручным и автоматизированным тестированием Web/API. Основное направление автоматизации — **Playwright + TypeScript**. Строю воспроизводимые CI-пайплайны, работаю с SQL, Docker, Jenkins и автоматизированной отчётностью.
 
----
+## ⭐ Portfolio highlights
 
-## 🧰 Основной стек
-
-| Направление | Инструменты и технологии |
+| Область | Что реализовано |
 | --- | --- |
-| Automation | Playwright, TypeScript, POM, fixtures, helpers, test-data factories |
-| Web | DevTools, HTML/CSS, Figma, Perfect Pixel |
-| API | REST, SOAP, Postman, Swagger, JSON, HTTP |
-| Test Management | Jira, YouTrack, Qase, TestRail, Confluence |
-| Databases | SQL, PostgreSQL, MySQL, MongoDB |
-| CI/CD & Infrastructure | GitHub Actions, Jenkins, Docker, Bash, Git |
-| Reporting | Allure Report, Playwright HTML Report, trace, screenshots, video |
-| Mobile | Android Studio, Xcode, Charles Proxy, Fiddler, Proxyman |
-| Quality | ESLint, TypeScript typecheck, npm audit, accessibility, Lighthouse, visual regression |
+| Test Automation | Playwright + TypeScript, Unit / API / E2E, POM, fixtures, helpers, test-data factories |
+| Cross-browser CI | Chromium / Firefox / WebKit, GitHub Actions, `retries=0` |
+| Reporting & Diagnostics | Allure, Playwright HTML, trace, screenshots, video, failure artifacts |
+| Non-functional QA | Accessibility (axe-core), Lighthouse, Visual Regression, security и stability checks |
+| Infrastructure | Docker, Jenkins, PostgreSQL, GitHub Actions, Telegram Bot API |
 
 ---
 
@@ -32,59 +26,54 @@
 
 ### 1. [PomidorQA QA Automation](https://github.com/TokhirjonYuldoshev/pomidorqa-tests)
 
-Мой основной standalone-проект по **QA Automation на Playwright + TypeScript**.
+Основной standalone-проект по **QA Automation на Playwright + TypeScript**.
 
-- Unit / API / E2E уровни тестирования;
-- cross-browser E2E: **Chromium / Firefox / WebKit**;
-- Page Object Model, fixtures, helpers и уникальные test data;
-- CI на **GitHub Actions** с `retries=0`;
-- **Allure Report + Playwright HTML Report**;
-- trace, screenshots, video и failure artifacts;
-- **Nightly Regression** и отдельный Stability workflow для поиска flaky-тестов;
-- **Accessibility Audit** через axe-core;
-- **Performance Smoke** через Lighthouse;
-- **Visual Regression**;
-- Security gates с `npm audit`, ESLint и TypeScript typecheck;
-- Telegram-уведомления о результатах CI;
-- manual-only **Registration Contract Smoke** для проверки реального HTTP-контракта регистрации.
+- Unit / API / E2E уровни;
+- Chromium / Firefox / WebKit;
+- Page Object Model, fixtures и уникальные test data;
+- GitHub Actions CI с `retries=0`;
+- Allure + Playwright HTML;
+- Nightly Regression и Stability workflow;
+- Accessibility Audit, Lighthouse и Visual Regression;
+- security gates и Telegram notifications;
+- manual-only Registration Contract Smoke для реального HTTP-контракта регистрации.
 
 ### 2. [Hybrid QA Monitoring System](https://github.com/TokhirjonYuldoshev/qa-docker-monitor)
 
-Мониторинг здоровья PostgreSQL в двух средах:
+QA monitoring для проверки **доступности и возможности записи в PostgreSQL**:
 
-- **GitHub Actions** — cloud checks;
-- **Jenkins** — локальный pipeline;
-- PostgreSQL в Docker;
-- автоматические SQL health checks;
-- Telegram alerts при успехе и ошибках.
+- PostgreSQL service container в GitHub Actions;
+- scheduled SQL health checks;
+- Docker + Windows/Jenkins-compatible monitoring;
+- Telegram alerts на success/failure.
 
-**Стек:** Docker · PostgreSQL · Jenkins · GitHub Actions · Telegram Bot API
+**Стек:** PostgreSQL · Docker · GitHub Actions · Jenkins · Telegram Bot API
 
-### 3. [DevOps CI/CD Automation Project](https://github.com/TokhirjonYuldoshev/my-docker-project)
+### 3. [Jenkins + Docker CI Pipeline](https://github.com/TokhirjonYuldoshev/my-docker-project)
 
-Production-style учебный CI/CD pipeline:
+Компактный CI/Docker pet-project:
 
 - Python + Pytest;
-- Flake8 static analysis;
+- Flake8;
 - Jenkins Declarative Pipeline;
-- Docker image build;
-- публикация image в Docker Hub;
-- Telegram build notifications.
+- Docker build и публикация image в Docker Hub;
+- Jenkins Credentials и Telegram build notifications.
 
 **Стек:** Python · Pytest · Flake8 · Docker · Jenkins · Docker Hub
 
 ---
 
-## 🧪 Manual QA / API / SQL портфолио
+<details>
+<summary><b>🧪 Manual QA / API / SQL / Mobile portfolio</b></summary>
 
 ### Web testing — DemoShopping
 
 - 5 чек-листов и **45+ тест-кейсов** на корзину, checkout и оплату;
 - **28 баг-репортов**, включая blocker-дефекты;
 - локализация проблем через DevTools Network / Console;
-- тестирование API и верификация данных через SQL.
+- API testing и SQL-верификация данных.
 
-[🔗 Открыть Web-документацию](https://docs.google.com/spreadsheets/d/10L3WmvIuV3qYr8N86WoHXyFqlFgBHpgU7K7eCbUssYk/edit?pli=1&gid=0#gid=0)
+[Открыть Web-документацию](https://docs.google.com/spreadsheets/d/10L3WmvIuV3qYr8N86WoHXyFqlFgBHpgU7K7eCbUssYk/edit?pli=1&gid=0#gid=0)
 
 ### API testing — Postman
 
@@ -94,42 +83,46 @@ Production-style учебный CI/CD pipeline:
 
 ### SQL & NoSQL
 
-- JOIN, подзапросы, агрегаты;
-- MySQL / PostgreSQL / MongoDB;
-- проверка данных приложения через запросы к БД.
+SQL: JOIN, подзапросы, агрегаты. Практика с PostgreSQL, MySQL и MongoDB.
 
-[🔗 Примеры SQL / NoSQL](https://docs.google.com/spreadsheets/d/10L3WmvIuV3qYr8N86WoHXyFqlFgBHpgU7K7eCbUssYk/edit?pli=1&gid=1293622627#gid=1293622627)
+[Примеры SQL / NoSQL](https://docs.google.com/spreadsheets/d/10L3WmvIuV3qYr8N86WoHXyFqlFgBHpgU7K7eCbUssYk/edit?pli=1&gid=1293622627#gid=1293622627)
 
 ### Mobile testing
 
-- Android: установка, прерывания, смена темы и основные пользовательские сценарии;
-- **30 тест-кейсов** на основной пользовательский flow;
-- баг-репорты на критические crash-сценарии с логами и шагами воспроизведения.
+- Android: установка, прерывания, смена темы и пользовательские сценарии;
+- **30 тест-кейсов** на основной flow;
+- bug reports на критические crash-сценарии с логами и шагами воспроизведения.
 
-[🔗 Открыть Mobile-документацию](https://docs.google.com/spreadsheets/d/10L3WmvIuV3qYr8N86WoHXyFqlFgBHpgU7K7eCbUssYk/edit?pli=1&gid=292251871#gid=292251871)
+[Открыть Mobile-документацию](https://docs.google.com/spreadsheets/d/10L3WmvIuV3qYr8N86WoHXyFqlFgBHpgU7K7eCbUssYk/edit?pli=1&gid=292251871#gid=292251871)
 
----
-
-## 🎓 Обучение
-
-Мой путь обучения строился от ручного тестирования и SQL к полноценной автоматизации:
-
-1. **[Тестирование ПО с нуля. Теория + практика. Продвинутый курс с ИИ](https://stepik.org/course/245575/promo)** — Артём Русов, Stepik  
-   Анализ требований, тест-дизайн, тест-план и тестовая стратегия, тест-документация, Web/Mobile, API, MySQL/MongoDB, Git/GitHub/Bash и основы CI/CD.
-2. **SQL практикум. SELECT-запросы** — практика SQL и работы с данными.
-3. **QA за 60 дней** — ручное и API-тестирование.
-4. **AQA за 60 дней** — Playwright + TypeScript.
-
-Дополнительно постоянно развиваю практические навыки через собственные QA/AQA pet-проекты и CI-инфраструктуру.
+</details>
 
 ---
 
-## 📚 Образование
+## 🧰 Стек
+
+`Playwright` `TypeScript` `Postman` `REST API` `SQL` `PostgreSQL` `MySQL` `MongoDB` `Git` `GitHub Actions` `Docker` `Jenkins` `Allure` `DevTools` `Jira` `YouTrack` `Qase` `TestRail` `Charles Proxy`
+
+---
+
+<details>
+<summary><b>🎓 Обучение и образование</b></summary>
+
+### QA / AQA
+
+1. **[Тестирование ПО с нуля. Теория + практика. Продвинутый курс с ИИ](https://stepik.org/course/245575/promo)** — Артём Русов, Stepik
+2. **SQL практикум. SELECT-запросы** — Pragmatic Programmer, Stepik
+3. **QA за 60 дней** — ручное и API-тестирование
+4. **AQA за 60 дней** — Playwright + TypeScript
+
+### Образование
 
 - **Санкт-Петербургский государственный технологический институт (СПбГТИ)** — Бизнес-информатика, 2024–н.в.
 - **Южно-Казахстанская государственная медицинская академия (ЮКГМА)** — Фармация, провизор, 2006.
 
-Профильный бэкграунд в фармацевтике помогает быстрее погружаться в предметную область, в том числе при работе с MedTech-продуктами.
+Профильный фармацевтический бэкграунд помогает быстро погружаться в предметную область, в том числе MedTech.
+
+</details>
 
 ---
 
@@ -138,7 +131,5 @@ Production-style учебный CI/CD pipeline:
 - **Email:** [toxir.yuldoshev1983@gmail.com](mailto:toxir.yuldoshev1983@gmail.com)
 - **Telegram:** [@TokhirjonYuldoshev](https://t.me/TokhirjonYuldoshev)
 - **LinkedIn:** [tokhirjon-yuldoshev](https://www.linkedin.com/in/tokhirjon-yuldoshev/)
-
----
 
 ![Visitor Badge](https://visitor-badge.laobi.icu/badge?page_id=TokhirjonYuldoshev)
