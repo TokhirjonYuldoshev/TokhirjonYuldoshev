@@ -20,6 +20,12 @@ QA Engineer focused on **test automation, API testing and CI quality engineering
 | Non-functional QA | Accessibility (axe-core), Lighthouse, Visual Regression, security и stability checks |
 | Infrastructure | Docker, Jenkins, PostgreSQL, GitHub Actions, container runtime smoke, Telegram Bot API |
 
+### Live CI status
+
+[![PomidorQA CI](https://github.com/TokhirjonYuldoshev/pomidorqa-tests/actions/workflows/playwright.yml/badge.svg)](https://github.com/TokhirjonYuldoshev/pomidorqa-tests/actions/workflows/playwright.yml)
+[![Database Health](https://github.com/TokhirjonYuldoshev/qa-docker-monitor/actions/workflows/main.yml/badge.svg)](https://github.com/TokhirjonYuldoshev/qa-docker-monitor/actions/workflows/main.yml)
+[![Python & Docker CI](https://github.com/TokhirjonYuldoshev/my-docker-project/actions/workflows/ci.yml/badge.svg)](https://github.com/TokhirjonYuldoshev/my-docker-project/actions/workflows/ci.yml)
+
 ---
 
 ## 🚀 Ключевые проекты
