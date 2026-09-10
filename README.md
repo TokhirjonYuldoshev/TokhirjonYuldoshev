@@ -10,7 +10,7 @@ QA Engineer focused on **test automation, API testing and CI quality engineering
 
 Работаю с ручным и автоматизированным тестированием Web/API. Основное направление автоматизации — **Playwright + TypeScript**. Строю воспроизводимые CI-пайплайны, работаю с SQL, Docker, Jenkins и автоматизированной отчётностью.
 
-##  Portfolio highlights
+## Portfolio highlights
 
 | Область | Что реализовано |
 | --- | --- |
@@ -18,7 +18,8 @@ QA Engineer focused on **test automation, API testing and CI quality engineering
 | Cross-browser CI | Chromium / Firefox / WebKit, GitHub Actions, `retries=0` |
 | Reporting & Diagnostics | Allure, Playwright HTML, trace, screenshots, video, failure artifacts |
 | Non-functional QA | Accessibility (axe-core), Lighthouse, Visual Regression, security и stability checks |
-| Infrastructure | Docker, Jenkins, PostgreSQL, GitHub Actions, container runtime smoke, Telegram Bot API |
+| Quality governance | protected `main`, strict required checks, risk-based merge policy и failure classification |
+| Infrastructure | Docker, Jenkins, PostgreSQL, container runtime smoke, Trivy, Telegram Bot API |
 
 ### Live CI status
 
@@ -28,7 +29,7 @@ QA Engineer focused on **test automation, API testing and CI quality engineering
 
 ---
 
-##  Ключевые проекты
+## Ключевые проекты
 
 ### 1. [PomidorQA QA Automation](https://github.com/TokhirjonYuldoshev/pomidorqa-tests)
 
@@ -42,6 +43,7 @@ QA Engineer focused on **test automation, API testing and CI quality engineering
 - Nightly Regression и Stability workflow;
 - Accessibility Audit, Lighthouse и Visual Regression;
 - security gates и Telegram notifications;
+- protected `main` со strict required checks и risk-based QA quality-gate policy;
 - manual-only Registration Contract Smoke для реального HTTP-контракта регистрации.
 
 ### 2. [Hybrid QA Monitoring System](https://github.com/TokhirjonYuldoshev/qa-docker-monitor)
@@ -61,18 +63,19 @@ QA monitoring для проверки **доступности и возможн
 Компактный CI/Docker pet-project с независимыми quality gates:
 
 - GitHub Actions: Flake8, Pytest, Docker build и **container runtime smoke**;
-- независимые checks агрегируются в стабильный **`CI / Required gate`** для branch protection;
-- Python 3.12 baseline, pinned development dependencies и контролируемые Dependabot updates;
+- Trivy container security gate блокирует fixable CRITICAL vulnerabilities;
+- независимые checks агрегируются в стабильный **`CI / Required gate`**;
+- Python 3.12 baseline, non-root runtime, pinned development dependencies и контролируемые Dependabot updates;
 - Jenkins Declarative Pipeline: lint → tests → build → runtime smoke → Docker Hub push;
 - Jenkins Credentials, гарантированная cleanup-попытка и Telegram build notifications;
 - notification transport не подменяет реальный build/test signal.
 
-**Стек:** Python 3.12 · Pytest · Flake8 · Docker · Jenkins · GitHub Actions · Docker Hub
+**Стек:** Python 3.12 · Pytest · Flake8 · Docker · Trivy · Jenkins · GitHub Actions · Docker Hub
 
 ---
 
 <details>
-<summary><b> Manual QA / API / SQL / Mobile portfolio</b></summary>
+<summary><b>Manual QA / API / SQL / Mobile portfolio</b></summary>
 
 ### Web testing — DemoShopping
 
@@ -107,14 +110,14 @@ SQL: JOIN, подзапросы, агрегаты. Практика с PostgreSQ
 
 ---
 
-##  Стек
+## Стек
 
-`Playwright` `TypeScript` `Postman` `REST API` `SQL` `PostgreSQL` `MySQL` `MongoDB` `Git` `GitHub Actions` `Docker` `Jenkins` `Python` `Pytest` `Allure` `DevTools` `Jira` `YouTrack` `Qase` `TestRail` `Charles Proxy`
+`Playwright` `TypeScript` `Postman` `REST API` `SQL` `PostgreSQL` `MySQL` `MongoDB` `Git` `GitHub Actions` `Docker` `Trivy` `Jenkins` `Python` `Pytest` `Allure` `DevTools` `Jira` `YouTrack` `Qase` `TestRail` `Charles Proxy`
 
 ---
 
 <details>
-<summary><b> Обучение и образование</b></summary>
+<summary><b>Обучение и образование</b></summary>
 
 ### QA / AQA
 
@@ -134,7 +137,7 @@ SQL: JOIN, подзапросы, агрегаты. Практика с PostgreSQ
 
 ---
 
-##  Контакты
+## Контакты
 
 - **Email:** [toxir.yuldoshev1983@gmail.com](mailto:toxir.yuldoshev1983@gmail.com)
 - **Telegram:** [@TokhirjonYuldoshev](https://t.me/TokhirjonYuldoshev)
