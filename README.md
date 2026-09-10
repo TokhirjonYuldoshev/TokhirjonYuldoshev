@@ -1,99 +1,143 @@
-# Привет, меня зовут Тохиржон!
+# Привет, меня зовут Тохиржон 👋
+
+## QA Engineer | QA Automation
+
+**Playwright · TypeScript · API · SQL · GitHub Actions · Docker · Jenkins**
+
+Занимаюсь ручным и автоматизированным тестированием Web/API. Пишу автотесты на **Playwright + TypeScript**, работаю с REST API, SQL и DevTools, строю CI-пайплайны в GitHub Actions и Jenkins, использую Docker и автоматизированную отчётность.
+
+В портфолио — проекты с **Unit / API / E2E**, cross-browser testing, Allure, accessibility, Lighthouse, visual regression, security и stability-проверками.
+
+Сейчас развиваюсь в направлении **QA Automation** и рассматриваю позиции **QA Engineer / QA Automation Engineer**.
 
 ---
 
-### 👨‍💻 Обо мне:
+## 🧰 Основной стек
 
-Я начинающий QA Engineer (Junior). Прошел обучение по тестированию веб и мобильных приложений. Умею писать тестовую документацию, работать с API и базами данных. Ищу первую работу в QA.
-
----
-
-### 🧠 Ключевые навыки (Hard Skills):
-
-- **Теория:** SDLC/STLC, техники тест-дизайна, клиент-серверная архитектура.
-- **Инструменты:** Jira, YouTrack, Qase, Postman, SoapUI, Charles, Fiddler, Android Studio, Xcode.
-- **Базы данных и код:** SQL (MySQL, MongoDB), Git, Bash, HTML/CSS.
-
----
-
-### 📫 Мои контакты:
-
-- 📧 **Почта:** [shoxrux_prince@mail.ru](mailto:shoxrux_prince@mail.ru) / [toxir.yuldoshev1983@gmail.com](mailto:toxir.yuldoshev1983@gmail.com)
-- ✈️ **Telegram:** [@shoxrux_prince](https://t.me/shoxrux_prince) / [@toxir_yuldoshev1983](https://t.me/toxir_yuldoshev1983)
-
-<div id="badges">
-  <a href="https://t.me/shoxrux_prince">
-    <img src="https://img.shields.io/badge/Telegram-@shoxrux__prince-blue?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram 1"/>
-  </a>
-  <a href="https://t.me/toxir_yuldoshev1983">
-    <img src="https://img.shields.io/badge/Telegram-@toxir__yuldoshev1983-blue?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram 2"/>
-  </a>
-  <a href="mailto:shoxrux_prince@mail.ru">
-    <img src="https://img.shields.io/badge/Mail.ru-Написать-orange?style=for-the-badge&logo=mail.ru&logoColor=white" alt="Mail.ru"/>
-  </a>
-</div>
+| Направление | Инструменты и технологии |
+| --- | --- |
+| Automation | Playwright, TypeScript, POM, fixtures, helpers, test-data factories |
+| Web | DevTools, HTML/CSS, Figma, Perfect Pixel |
+| API | REST, SOAP, Postman, Swagger, JSON, HTTP |
+| Test Management | Jira, YouTrack, Qase, TestRail, Confluence |
+| Databases | SQL, PostgreSQL, MySQL, MongoDB |
+| CI/CD & Infrastructure | GitHub Actions, Jenkins, Docker, Bash, Git |
+| Reporting | Allure Report, Playwright HTML Report, trace, screenshots, video |
+| Mobile | Android Studio, Xcode, Charles Proxy, Fiddler, Proxyman |
+| Quality | ESLint, TypeScript typecheck, npm audit, accessibility, Lighthouse, visual regression |
 
 ---
 
-### 🛠 Мой стек технологий:
+## 🚀 Ключевые проекты
 
-**📁 Тест-менеджмент:**
-<div>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg" title="jira" alt="jira" width="40" height="40"/>&nbsp;
-  <img src="https://www.vectorlogo.zone/logos/jetbrains-youtrack/jetbrains-youtrack-icon.svg" title="youtrack" alt="youtrack" width="40" height="40"/>&nbsp;
-  <img src="https://luna1.co/eb0187.png" title="qase" alt="qase" width="40" height="40"/>&nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" title="figma" alt="figma" width="40" height="40"/>&nbsp;
-</div>
+### 1. [PomidorQA QA Automation](https://github.com/TokhirjonYuldoshev/pomidorqa-tests)
 
-**🌐 Web и API:**
-<div>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/chrome/chrome-original.svg" title="chrome" alt="chrome" width="40" height="40"/>&nbsp;
-  <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" title="postman" alt="postman" width="40" height="40"/>&nbsp;
-  <img src="https://www.vectorlogo.zone/logos/soapui/soapui-icon.svg" title="soapui" alt="soapui" width="40" height="40"/>&nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" title="html5" alt="html5" width="40" height="40"/>&nbsp;
-</div>
+Мой основной standalone-проект по **QA Automation на Playwright + TypeScript**.
 
-**📱 Mobile и Снифферы:**
-<div>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg" title="android-studio" alt="android-studio" width="40" height="40"/>&nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/xcode/xcode-original.svg" title="xcode" alt="xcode" width="40" height="40"/>&nbsp;
-  <img src="https://cdn.icon-icons.com/icons2/3053/PNG/512/charles_proxy_macos_bigsur_icon_190302.png" title="charles-proxy" alt="charles-proxy" width="40" height="40"/>&nbsp;
-  <img src="https://www.megaleechers.com/storage/Fiddler-Everywhere-Icon.png" title="fiddler" alt="fiddler" width="40" height="40"/>&nbsp;
-  <img src="https://pbs.twimg.com/profile_images/1589614420766126080/slAIVDtr_400x400.jpg" title="proxyman" alt="proxyman" width="40" height="40"/>&nbsp;
-</div>
+- Unit / API / E2E уровни тестирования;
+- cross-browser E2E: **Chromium / Firefox / WebKit**;
+- Page Object Model, fixtures, helpers и уникальные test data;
+- CI на **GitHub Actions** с `retries=0`;
+- **Allure Report + Playwright HTML Report**;
+- trace, screenshots, video и failure artifacts;
+- **Nightly Regression** и отдельный Stability workflow для поиска flaky-тестов;
+- **Accessibility Audit** через axe-core;
+- **Performance Smoke** через Lighthouse;
+- **Visual Regression**;
+- Security gates с `npm audit`, ESLint и TypeScript typecheck;
+- Telegram-уведомления о результатах CI;
+- manual-only **Registration Contract Smoke** для проверки реального HTTP-контракта регистрации.
 
-**💾 Данные и Код:**
-<div>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" title="mysql" alt="mysql" width="40" height="40"/>&nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" title="mongodb" alt="mongodb" width="40" height="40"/>&nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" title="git" alt="git" width="40" height="40"/>&nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" title="bash" alt="bash" width="40" height="40"/>&nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" title="vscode" alt="vscode" width="40" height="40"/>&nbsp;
-</div>
+### 2. [Hybrid QA Monitoring System](https://github.com/TokhirjonYuldoshev/qa-docker-monitor)
+
+Мониторинг здоровья PostgreSQL в двух средах:
+
+- **GitHub Actions** — cloud checks;
+- **Jenkins** — локальный pipeline;
+- PostgreSQL в Docker;
+- автоматические SQL health checks;
+- Telegram alerts при успехе и ошибках.
+
+**Стек:** Docker · PostgreSQL · Jenkins · GitHub Actions · Telegram Bot API
+
+### 3. [DevOps CI/CD Automation Project](https://github.com/TokhirjonYuldoshev/my-docker-project)
+
+Production-style учебный CI/CD pipeline:
+
+- Python + Pytest;
+- Flake8 static analysis;
+- Jenkins Declarative Pipeline;
+- Docker image build;
+- публикация image в Docker Hub;
+- Telegram build notifications.
+
+**Стек:** Python · Pytest · Flake8 · Docker · Jenkins · Docker Hub
 
 ---
 
-### 📂 Тестовые артефакты (Мое портфолио):
+## 🧪 Manual QA / API / SQL портфолио
 
-#### 1. 📑 Тестовая документация (Web)
-> *Проект: Интернет-магазин DemoShopping*
-* **[🔗 Открыть Web-документацию (Google Sheets)](https://docs.google.com/spreadsheets/d/10L3WmvIuV3qYr8N86WoHXyFqlFgBHpgU7K7eCbUssYk/edit?pli=1&gid=0#gid=0)**
-    * Чек-листы, Тест-кейсы, Баг-репорты.
+### Web testing — DemoShopping
 
-#### 2. 🚀 API Тестирование (Postman)
-> *Коллекции запросов с автотестами*
-* **[📄 Скачать PetStore Collection](./PetStore.postman_collection.json)**
-    * Тестирование методов: `User`, `Pet`, `Store` (CRUD операции).
-* **[📄 Скачать DemoShopping Collection](./DemoShopping.postman_collection.json)**
-    * Тестирование интернет-магазина: `Products`, `Cart`, `Orders`, `Payment`.
+- 5 чек-листов и **45+ тест-кейсов** на корзину, checkout и оплату;
+- **28 баг-репортов**, включая blocker-дефекты;
+- локализация проблем через DevTools Network / Console;
+- тестирование API и верификация данных через SQL.
 
-#### 3. 💾 Базы данных (SQL & NoSQL)
-* **[🔗 Открыть примеры запросов](https://docs.google.com/spreadsheets/d/10L3WmvIuV3qYr8N86WoHXyFqlFgBHpgU7K7eCbUssYk/edit?pli=1&gid=1293622627#gid=1293622627)**
-    * MySQL (JOIN, UNION) и MongoDB.
+[🔗 Открыть Web-документацию](https://docs.google.com/spreadsheets/d/10L3WmvIuV3qYr8N86WoHXyFqlFgBHpgU7K7eCbUssYk/edit?pli=1&gid=0#gid=0)
 
-#### 4. 📱 Мобильное тестирование
-* **[🔗 Открыть Mobile-документацию](https://docs.google.com/spreadsheets/d/10L3WmvIuV3qYr8N86WoHXyFqlFgBHpgU7K7eCbUssYk/edit?pli=1&gid=292251871#gid=292251871)**
-    * Тест-план и чек-лист для Android.
+### API testing — Postman
+
+- [PetStore Collection](./PetStore.postman_collection.json) — `User`, `Pet`, `Store`, CRUD;
+- [DemoShopping Collection](./DemoShopping.postman_collection.json) — `Products`, `Cart`, `Orders`, `Payment`;
+- E2E API scenarios и автопроверки в Postman Runner.
+
+### SQL & NoSQL
+
+- JOIN, подзапросы, агрегаты;
+- MySQL / PostgreSQL / MongoDB;
+- проверка данных приложения через запросы к БД.
+
+[🔗 Примеры SQL / NoSQL](https://docs.google.com/spreadsheets/d/10L3WmvIuV3qYr8N86WoHXyFqlFgBHpgU7K7eCbUssYk/edit?pli=1&gid=1293622627#gid=1293622627)
+
+### Mobile testing
+
+- Android: установка, прерывания, смена темы и основные пользовательские сценарии;
+- **30 тест-кейсов** на основной пользовательский flow;
+- баг-репорты на критические crash-сценарии с логами и шагами воспроизведения.
+
+[🔗 Открыть Mobile-документацию](https://docs.google.com/spreadsheets/d/10L3WmvIuV3qYr8N86WoHXyFqlFgBHpgU7K7eCbUssYk/edit?pli=1&gid=292251871#gid=292251871)
+
+---
+
+## 🎓 Обучение
+
+Мой путь обучения строился от ручного тестирования и SQL к полноценной автоматизации:
+
+1. **[Тестирование ПО с нуля. Теория + практика. Продвинутый курс с ИИ](https://stepik.org/course/245575/promo)** — Артём Русов, Stepik  
+   Анализ требований, тест-дизайн, тест-план и тестовая стратегия, тест-документация, Web/Mobile, API, MySQL/MongoDB, Git/GitHub/Bash и основы CI/CD.
+2. **SQL практикум. SELECT-запросы** — практика SQL и работы с данными.
+3. **QA за 60 дней** — ручное и API-тестирование.
+4. **AQA за 60 дней** — Playwright + TypeScript.
+
+Дополнительно постоянно развиваю практические навыки через собственные QA/AQA pet-проекты и CI-инфраструктуру.
+
+---
+
+## 📚 Образование
+
+- **Санкт-Петербургский государственный технологический институт (СПбГТИ)** — Бизнес-информатика, 2024–н.в.
+- **Южно-Казахстанская государственная медицинская академия (ЮКГМА)** — Фармация, провизор, 2006.
+
+Профильный бэкграунд в фармацевтике помогает быстрее погружаться в предметную область, в том числе при работе с MedTech-продуктами.
+
+---
+
+## 📫 Контакты
+
+- **Email:** [toxir.yuldoshev1983@gmail.com](mailto:toxir.yuldoshev1983@gmail.com)
+- **Telegram:** [@TokhirjonYuldoshev](https://t.me/TokhirjonYuldoshev)
+- **LinkedIn:** [tokhirjon-yuldoshev](https://www.linkedin.com/in/tokhirjon-yuldoshev/)
 
 ---
 
