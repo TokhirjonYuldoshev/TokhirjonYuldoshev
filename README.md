@@ -4,22 +4,22 @@
 
 **Playwright · TypeScript · API · SQL · GitHub Actions · Docker · Jenkins**
 
-QA Engineer focused on **test automation, API testing and CI quality engineering**.
+QA Engineer с фокусом на **автоматизации тестирования, API, CI/CD quality gates и диагностируемой тестовой инфраструктуре**.
 
 Санкт-Петербург · рассматриваю удалённый / гибридный / офисный формат
 
-Работаю с ручным и автоматизированным тестированием Web/API. Основное направление автоматизации — **Playwright + TypeScript**. Строю воспроизводимые CI-пайплайны, работаю с SQL, Docker, Jenkins и автоматизированной отчётностью.
+Работаю с ручным и автоматизированным тестированием Web/API. Основное направление автоматизации — **Playwright + TypeScript**. В portfolio-проектах строю воспроизводимые CI-пайплайны, разделяю независимые quality signals, сохраняю failure diagnostics и не маскирую реальные ошибки retries или вспомогательными интеграциями.
 
 ## Portfolio highlights
 
 | Область | Что реализовано |
 | --- | --- |
 | Test Automation | Playwright + TypeScript, Unit / API / E2E, POM, fixtures, helpers, test-data factories |
-| Cross-browser CI | Chromium / Firefox / WebKit, GitHub Actions, `retries=0` |
-| Reporting & Diagnostics | Allure, Playwright HTML, trace, screenshots, video, failure artifacts |
+| Cross-browser CI | Chromium / Firefox / WebKit, GitHub Actions, `workers=1`, `retries=0` для live E2E |
+| Reporting & Diagnostics | Allure, Playwright HTML, trace, screenshots, video, failure artifacts, Actions Summary |
 | Non-functional QA | Accessibility (axe-core), Lighthouse, Visual Regression, security и stability checks |
-| Quality governance | protected `main`, strict required checks, risk-based merge policy и failure classification |
-| Infrastructure | Docker, Jenkins, PostgreSQL, container runtime smoke, Trivy, Telegram Bot API |
+| Quality governance | protected `main`, strict required checks, risk-based merge policy, dependency maintenance |
+| Infrastructure | Docker, Jenkins, PostgreSQL, container runtime smoke, Trivy, Telegram observability |
 
 ### Live CI status
 
@@ -35,42 +35,49 @@ QA Engineer focused on **test automation, API testing and CI quality engineering
 
 Основной standalone-проект по **QA Automation на Playwright + TypeScript**.
 
-- Unit / API / E2E уровни;
-- Chromium / Firefox / WebKit;
-- Page Object Model, fixtures и уникальные test data;
-- GitHub Actions CI с `retries=0`;
-- Allure + Playwright HTML;
+- Unit / API / E2E уровни тестирования;
+- Chromium / Firefox / WebKit в автоматическом browser matrix;
+- Page Object Model, fixtures, helpers и уникальные test data;
+- GitHub Actions CI с `workers=1` и `retries=0` для live E2E;
+- Allure + Playwright HTML, trace/screenshots/video и failure artifacts;
 - Nightly Regression и Stability workflow;
 - Accessibility Audit, Lighthouse и Visual Regression;
-- security gates и Telegram notifications;
+- security gates, controlled Dependabot maintenance и Telegram notifications;
 - protected `main` со strict required checks и risk-based QA quality-gate policy;
 - manual-only Registration Contract Smoke для реального HTTP-контракта регистрации.
 
-### 2. [Hybrid QA Monitoring System](https://github.com/TokhirjonYuldoshev/qa-docker-monitor)
+**Стек:** Playwright · TypeScript · Node.js · GitHub Actions · Allure · axe-core · Lighthouse · Telegram Bot API
 
-QA monitoring для проверки **доступности и возможности записи в PostgreSQL**:
+### 2. [Гибридный QA-мониторинг PostgreSQL](https://github.com/TokhirjonYuldoshev/qa-docker-monitor)
 
-- PostgreSQL service container и scheduled SQL write-health checks в GitHub Actions;
-- реальный `CREATE/INSERT` вместо поверхностной проверки порта;
-- GitHub Actions summary и явные failure semantics;
-- health signal отделён от Telegram notification transport;
-- Docker + Windows/Jenkins-compatible monitoring.
+Проект мониторинга, где health signal основан не на `ping`, а на **реальной возможности записи в PostgreSQL**.
 
-**Стек:** PostgreSQL · Docker · GitHub Actions · Jenkins · Telegram Bot API
+- PostgreSQL 16 service container и scheduled SQL write-health checks;
+- реальный `CREATE/INSERT` как source of truth;
+- Windows/Jenkins contract tests с изолированными command doubles;
+- `CI / Required gate` агрегирует обязательные monitoring signals;
+- структурированный GitHub Actions Summary;
+- Telegram observability отделена от DB health и не может скрыть реальный failure;
+- отдельный manual Telegram diagnostic workflow (`getMe` → `getChat` → `sendMessage`);
+- Dependabot, PR risk review и security policy.
 
-### 3. [Jenkins + Docker CI Pipeline](https://github.com/TokhirjonYuldoshev/my-docker-project)
+**Стек:** PostgreSQL · Docker · GitHub Actions · Jenkins · Windows · Telegram Bot API
 
-Компактный CI/Docker pet-project с независимыми quality gates:
+### 3. [Jenkins + Docker: CI/CD-пайплайн для QA](https://github.com/TokhirjonYuldoshev/my-docker-project)
 
-- GitHub Actions: Flake8, Pytest, Docker build и **container runtime smoke**;
-- Trivy container security gate блокирует fixable CRITICAL vulnerabilities;
-- независимые checks агрегируются в стабильный **`CI / Required gate`**;
-- Python 3.12 baseline, non-root runtime, pinned development dependencies и контролируемые Dependabot updates;
+Компактный проект, сфокусированный на **pipeline design и независимых quality gates**, а не на искусственном количестве тестов.
+
+- GitHub Actions: Flake8, Pytest, Docker build + **container runtime smoke**;
+- Trivy container-security gate блокирует fixable `CRITICAL` vulnerabilities;
+- независимые checks агрегируются в стабильный `CI / Required gate`;
+- Python 3.12 baseline, non-root Docker runtime и pinned development dependencies;
+- controlled Dependabot updates для Python, GitHub Actions и Docker base image;
 - Jenkins Declarative Pipeline: lint → tests → build → runtime smoke → Docker Hub push;
-- Jenkins Credentials, гарантированная cleanup-попытка и Telegram build notifications;
-- notification transport не подменяет реальный build/test signal.
+- Telegram CI observability с русским структурированным итогом и прямой ссылкой на run;
+- manual-only Telegram diagnostics;
+- notification transport не подменяет реальный build/test/security signal.
 
-**Стек:** Python 3.12 · Pytest · Flake8 · Docker · Trivy · Jenkins · GitHub Actions · Docker Hub
+**Стек:** Python 3.12 · Pytest · Flake8 · Docker · Trivy · Jenkins · GitHub Actions · Docker Hub · Telegram Bot API
 
 ---
 
