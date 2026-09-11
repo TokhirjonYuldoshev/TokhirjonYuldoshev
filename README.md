@@ -22,7 +22,7 @@ QA Engineer с фокусом на **автоматизации тестиров
 | Non-functional QA | Accessibility (axe-core), Lighthouse, Visual Regression, security и stability checks |
 | Quality governance | protected `main`, strict required checks, risk-based Test Strategy, merge policy, dependency maintenance |
 | Operational QA | incident runbooks, signal ownership, severity/triage, evidence-preserving rerun policy, structured incident issue forms |
-| Infrastructure | Docker, Jenkins, PostgreSQL, container runtime smoke, non-root policy, Trivy, Telegram observability |
+| Infrastructure | Docker, Jenkins, PostgreSQL, container runtime smoke, non-root policy, Trivy, CycloneDX SBOM, Telegram observability |
 
 ### Live CI status
 
@@ -46,25 +46,26 @@ QA Engineer с фокусом на **автоматизации тестиров
 - Allure + Playwright HTML, trace/screenshots/video и failure artifacts;
 - Nightly Regression и Stability workflow;
 - Accessibility Audit, Lighthouse и Visual Regression;
-- security gates, controlled Dependabot maintenance и Telegram notifications;
+- security gates, controlled Dependabot maintenance, CycloneDX npm SBOM evidence и Telegram notifications;
 - protected `main` со strict required checks и risk-based QA quality-gate policy;
 - отдельная [Risk-Based Test Strategy](https://github.com/TokhirjonYuldoshev/pomidorqa-tests/blob/main/docs/test-strategy.md): risk model, ownership boundaries, failure triage, entry/exit criteria и quality metrics;
 - [QA Automation CI Incident Runbook](https://github.com/TokhirjonYuldoshev/pomidorqa-tests/blob/main/docs/ci-incident-runbook.md): signal ownership, cross-browser triage, live-environment policy, severity и resolution criteria;
 - manual-only Registration Contract Smoke для реального HTTP-контракта регистрации.
 
-**Стек:** Playwright · TypeScript · Node.js 24 · GitHub Actions · Allure · axe-core · Lighthouse · Telegram Bot API
+**Стек:** Playwright · TypeScript · Node.js 24 · GitHub Actions · Allure · axe-core · Lighthouse · CycloneDX · Telegram Bot API
 
 ### 2. [Гибридный QA-мониторинг PostgreSQL](https://github.com/TokhirjonYuldoshev/qa-docker-monitor)
 
-Проект мониторинга, где health signal основан не на `ping`, а на **реальной записи в PostgreSQL с последующим read-back**.
+QA-проект, где health signal основан не на `ping`, а на **реальной записи в PostgreSQL с последующим read-back**. Scheduled GitHub Actions path — это синтетический canary на изолированном PostgreSQL service container, а Windows/Jenkins-compatible path предназначен для отдельно управляемого контейнера.
 
-- PostgreSQL 16 service container и scheduled SQL write/read health checks;
+- PostgreSQL 16 service container и scheduled synthetic SQL write/read canary в GitHub Actions;
 - per-run markers для cloud и Windows/Jenkins paths: `CREATE / INSERT / SELECT` и exact read-back assertion как source of truth;
 - Windows/Jenkins contract tests с изолированными command doubles, включая проверку точного marker-фильтра в read-back query;
 - `CI / Required gate` агрегирует обязательные monitoring signals;
 - структурированный GitHub Actions Summary;
 - Telegram observability отделена от DB health и не может скрыть реальный failure;
 - отдельный manual Telegram diagnostic workflow (`getMe` → `getChat` → `sendMessage`);
+- [Monitoring Boundary](https://github.com/TokhirjonYuldoshev/qa-docker-monitor/blob/main/docs/monitoring-boundary.md) фиксирует границы synthetic и separately-managed monitoring paths;
 - [Monitoring Incident Runbook](https://github.com/TokhirjonYuldoshev/qa-docker-monitor/blob/main/docs/incident-runbook.md) + structured incident issue form;
 - Dependabot, PR risk review и security policy.
 
@@ -76,18 +77,19 @@ QA Engineer с фокусом на **автоматизации тестиров
 
 - GitHub Actions: dependency integrity (`pip check`) + Flake8, Pytest с JUnit evidence, Docker build + **container runtime smoke**;
 - Docker CI отдельно подтверждает declared non-root runtime user;
-- Trivy container-security gate блокирует fixable `CRITICAL` vulnerabilities;
+- Trivy container-security gate блокирует fixable `CRITICAL` vulnerabilities и сохраняет CycloneDX container SBOM evidence;
 - независимые checks агрегируются в стабильный `CI / Required gate`;
 - Python 3.12 baseline, non-root Docker runtime и pinned development dependencies;
 - controlled Dependabot updates для Python, GitHub Actions и Docker base image;
 - weekly full baseline validation повторно проверяет runtime/security drift даже без code changes;
 - Jenkins Declarative Pipeline: dependency check → lint → tests → build → non-root policy → runtime smoke; Docker process exit и stdout contract проверяются раздельно, Docker Hub publish разрешён только из `main`;
 - [CI/CD Pipeline Incident Runbook](https://github.com/TokhirjonYuldoshev/my-docker-project/blob/main/docs/pipeline-incident-runbook.md) + structured incident issue form;
+- [Scope and non-goals](https://github.com/TokhirjonYuldoshev/my-docker-project/blob/main/docs/scope-and-nongoals.md) фиксирует, что проект демонстрирует pipeline quality engineering, а не изображает production application или production SRE platform;
 - Telegram CI observability с русским структурированным итогом и прямой ссылкой на run;
 - manual-only Telegram diagnostics;
 - notification transport не подменяет реальный build/test/security signal.
 
-**Стек:** Python 3.12 · Pytest · Flake8 · Docker · Trivy · Jenkins · GitHub Actions · Docker Hub · Telegram Bot API
+**Стек:** Python 3.12 · Pytest · Flake8 · Docker · Trivy · CycloneDX · Jenkins · GitHub Actions · Docker Hub · Telegram Bot API
 
 ---
 
@@ -129,7 +131,7 @@ SQL: JOIN, подзапросы, агрегаты. Практика с PostgreSQ
 
 ## Стек
 
-`Playwright` `TypeScript` `Postman` `REST API` `SQL` `PostgreSQL` `MySQL` `MongoDB` `Git` `GitHub Actions` `Docker` `Trivy` `Jenkins` `Python` `Pytest` `Allure` `DevTools` `Jira` `YouTrack` `Qase` `TestRail` `Charles Proxy`
+`Playwright` `TypeScript` `Postman` `REST API` `SQL` `PostgreSQL` `MySQL` `MongoDB` `Git` `GitHub Actions` `Docker` `Trivy` `CycloneDX` `Jenkins` `Python` `Pytest` `Allure` `DevTools` `Jira` `YouTrack` `Qase` `TestRail` `Charles Proxy`
 
 ---
 
