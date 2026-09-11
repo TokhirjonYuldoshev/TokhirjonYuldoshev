@@ -4,6 +4,8 @@
 
 **Playwright · TypeScript · API · SQL · GitHub Actions · Docker · Jenkins**
 
+*QA Engineer focused on Playwright + TypeScript automation, API testing, CI/CD quality gates and observable test infrastructure.*
+
 QA Engineer с фокусом на **автоматизации тестирования, API, CI/CD quality gates и диагностируемой тестовой инфраструктуре**.
 
 Санкт-Петербург · рассматриваю удалённый / гибридный / офисный формат
