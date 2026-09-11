@@ -42,6 +42,7 @@ QA Engineer с фокусом на **автоматизации тестиров
 - Chromium / Firefox / WebKit в автоматическом browser matrix;
 - Page Object Model, fixtures, helpers и уникальные test data;
 - GitHub Actions CI с `workers=1` и `retries=0` для live E2E;
+- детерминированный локальный preflight: Node 24 runtime guard → lint → typecheck → Unit → API;
 - Allure + Playwright HTML, trace/screenshots/video и failure artifacts;
 - Nightly Regression и Stability workflow;
 - Accessibility Audit, Lighthouse и Visual Regression;
@@ -51,15 +52,15 @@ QA Engineer с фокусом на **автоматизации тестиров
 - [QA Automation CI Incident Runbook](https://github.com/TokhirjonYuldoshev/pomidorqa-tests/blob/main/docs/ci-incident-runbook.md): signal ownership, cross-browser triage, live-environment policy, severity и resolution criteria;
 - manual-only Registration Contract Smoke для реального HTTP-контракта регистрации.
 
-**Стек:** Playwright · TypeScript · Node.js · GitHub Actions · Allure · axe-core · Lighthouse · Telegram Bot API
+**Стек:** Playwright · TypeScript · Node.js 24 · GitHub Actions · Allure · axe-core · Lighthouse · Telegram Bot API
 
 ### 2. [Гибридный QA-мониторинг PostgreSQL](https://github.com/TokhirjonYuldoshev/qa-docker-monitor)
 
 Проект мониторинга, где health signal основан не на `ping`, а на **реальной записи в PostgreSQL с последующим read-back**.
 
 - PostgreSQL 16 service container и scheduled SQL write/read health checks;
-- уникальный run marker, `CREATE / INSERT / SELECT` и exact read-back assertion как source of truth;
-- Windows/Jenkins contract tests с изолированными command doubles;
+- per-run markers для cloud и Windows/Jenkins paths: `CREATE / INSERT / SELECT` и exact read-back assertion как source of truth;
+- Windows/Jenkins contract tests с изолированными command doubles, включая проверку точного marker-фильтра в read-back query;
 - `CI / Required gate` агрегирует обязательные monitoring signals;
 - структурированный GitHub Actions Summary;
 - Telegram observability отделена от DB health и не может скрыть реальный failure;
@@ -73,14 +74,14 @@ QA Engineer с фокусом на **автоматизации тестиров
 
 Компактный проект, сфокусированный на **pipeline design и независимых quality gates**, а не на искусственном количестве тестов.
 
-- GitHub Actions: Flake8, Pytest с JUnit evidence, Docker build + **container runtime smoke**;
+- GitHub Actions: dependency integrity (`pip check`) + Flake8, Pytest с JUnit evidence, Docker build + **container runtime smoke**;
 - Docker CI отдельно подтверждает declared non-root runtime user;
 - Trivy container-security gate блокирует fixable `CRITICAL` vulnerabilities;
 - независимые checks агрегируются в стабильный `CI / Required gate`;
 - Python 3.12 baseline, non-root Docker runtime и pinned development dependencies;
 - controlled Dependabot updates для Python, GitHub Actions и Docker base image;
 - weekly full baseline validation повторно проверяет runtime/security drift даже без code changes;
-- Jenkins Declarative Pipeline: lint → tests → build → runtime smoke, Docker Hub publish только из `main`;
+- Jenkins Declarative Pipeline: dependency check → lint → tests → build → non-root policy → runtime smoke; Docker process exit и stdout contract проверяются раздельно, Docker Hub publish разрешён только из `main`;
 - [CI/CD Pipeline Incident Runbook](https://github.com/TokhirjonYuldoshev/my-docker-project/blob/main/docs/pipeline-incident-runbook.md) + structured incident issue form;
 - Telegram CI observability с русским структурированным итогом и прямой ссылкой на run;
 - manual-only Telegram diagnostics;
@@ -158,5 +159,3 @@ SQL: JOIN, подзапросы, агрегаты. Практика с PostgreSQ
 - **Email:** [toxir.yuldoshev1983@gmail.com](mailto:toxir.yuldoshev1983@gmail.com)
 - **Telegram:** [@TokhirjonYuldoshev](https://t.me/TokhirjonYuldoshev)
 - **LinkedIn:** [tokhirjon-yuldoshev](https://www.linkedin.com/in/tokhirjon-yuldoshev/)
-
-![Visitor Badge](https://visitor-badge.laobi.icu/badge?page_id=TokhirjonYuldoshev)
