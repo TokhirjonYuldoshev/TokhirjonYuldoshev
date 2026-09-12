@@ -22,7 +22,8 @@ QA Engineer с фокусом на **автоматизации тестиров
 | Non-functional QA | Accessibility (axe-core), Lighthouse, Visual Regression, security и stability checks |
 | Quality governance | protected `main`, strict required checks, risk-based Test Strategy, merge policy, dependency maintenance |
 | Operational QA | incident runbooks, signal ownership, severity/triage, evidence-preserving rerun policy, structured incident issue forms |
-| Infrastructure | Docker, Jenkins, PostgreSQL, container runtime smoke, non-root policy, Trivy, CycloneDX SBOM, Telegram observability |
+| Observability | Telegram notifications для PR / push / manual / scheduled runs; transport отделён от test/security source of truth |
+| Infrastructure | Docker, Jenkins, PostgreSQL, container runtime smoke, non-root policy, Trivy, CycloneDX SBOM |
 
 ### Live CI status
 
@@ -44,9 +45,11 @@ QA Engineer с фокусом на **автоматизации тестиров
 - GitHub Actions CI с `workers=1` и `retries=0` для live E2E;
 - детерминированный локальный preflight: Node 24 runtime guard → lint → typecheck → Unit → API;
 - Allure + Playwright HTML, trace/screenshots/video и failure artifacts;
-- Nightly Regression и Stability workflow;
+- Nightly Regression и отдельный Stability workflow без retries;
 - Accessibility Audit, Lighthouse и Visual Regression;
-- security gates, controlled Dependabot maintenance, CycloneDX npm SBOM evidence и Telegram notifications;
+- security gates, controlled Dependabot maintenance и CycloneDX npm SBOM evidence;
+- отдельные структурированные Telegram notifications для основного CI, Nightly, Security, Stability, Accessibility, Lighthouse и Visual Regression;
+- Telegram transport работает как независимый observability-layer и не подменяет результат тестов или quality/security gates;
 - protected `main` со strict required checks и risk-based QA quality-gate policy;
 - отдельная [Risk-Based Test Strategy](https://github.com/TokhirjonYuldoshev/pomidorqa-tests/blob/main/docs/test-strategy.md): risk model, ownership boundaries, failure triage, entry/exit criteria и quality metrics;
 - [QA Automation CI Incident Runbook](https://github.com/TokhirjonYuldoshev/pomidorqa-tests/blob/main/docs/ci-incident-runbook.md): signal ownership, cross-browser triage, live-environment policy, severity и resolution criteria;
@@ -62,14 +65,16 @@ QA-проект, где health signal основан не на `ping`, а на *
 - per-run markers для cloud и Windows/Jenkins paths: `CREATE / INSERT / SELECT` и exact read-back assertion как source of truth;
 - Windows/Jenkins contract tests с изолированными command doubles, включая проверку точного marker-фильтра в read-back query;
 - `CI / Required gate` агрегирует обязательные monitoring signals;
+- отдельный `PostgreSQL Image Security` workflow: Trivy CRITICAL scan, exact `gosu` binary reachability через `govulncheck` и CycloneDX SBOM evidence;
 - структурированный GitHub Actions Summary;
-- Telegram observability отделена от DB health и не может скрыть реальный failure;
+- Telegram observability для database health и PostgreSQL Image Security работает на PR / push / manual / scheduled runs;
+- Telegram transport отделён от DB/security source of truth и не может скрыть реальный failure;
 - отдельный manual Telegram diagnostic workflow (`getMe` → `getChat` → `sendMessage`);
 - [Monitoring Boundary](https://github.com/TokhirjonYuldoshev/qa-docker-monitor/blob/main/docs/monitoring-boundary.md) фиксирует границы synthetic и separately-managed monitoring paths;
 - [Monitoring Incident Runbook](https://github.com/TokhirjonYuldoshev/qa-docker-monitor/blob/main/docs/incident-runbook.md) + structured incident issue form;
 - Dependabot, PR risk review и security policy.
 
-**Стек:** PostgreSQL · Docker · GitHub Actions · Jenkins · Windows · Telegram Bot API
+**Стек:** PostgreSQL · Docker · GitHub Actions · Jenkins · Windows · Trivy · CycloneDX · govulncheck · Telegram Bot API
 
 ### 3. [Jenkins + Docker: CI/CD-пайплайн для QA](https://github.com/TokhirjonYuldoshev/my-docker-project)
 
@@ -85,7 +90,7 @@ QA-проект, где health signal основан не на `ping`, а на *
 - Jenkins Declarative Pipeline: dependency check → lint → tests → build → non-root policy → runtime smoke; Docker process exit и stdout contract проверяются раздельно, Docker Hub publish разрешён только из `main`;
 - [CI/CD Pipeline Incident Runbook](https://github.com/TokhirjonYuldoshev/my-docker-project/blob/main/docs/pipeline-incident-runbook.md) + structured incident issue form;
 - [Scope and non-goals](https://github.com/TokhirjonYuldoshev/my-docker-project/blob/main/docs/scope-and-nongoals.md) фиксирует, что проект демонстрирует pipeline quality engineering, а не изображает production application или production SRE platform;
-- Telegram CI observability с русским структурированным итогом и прямой ссылкой на run;
+- Telegram CI observability отправляет структурированный итог для Pull Request, push в `main`, manual и weekly runs;
 - manual-only Telegram diagnostics;
 - notification transport не подменяет реальный build/test/security signal.
 
