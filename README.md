@@ -1,31 +1,43 @@
 # Тохиржон Йулдошев
 
-## QA Engineer | QA Automation
+## Инженер по качеству (QA) | Автоматизация тестирования | CI/CD
 
-**Playwright · TypeScript · API · SQL · GitHub Actions · Docker · Jenkins**
+**Основные технологии:** Playwright · TypeScript · API · SQL · GitHub Actions · Docker · Jenkins
 
-*QA Engineer focused on Playwright + TypeScript automation, API testing, CI/CD quality gates and observable test infrastructure.*
+Работаю с ручным и автоматизированным тестированием веб-приложений и API. Основное направление автоматизации — **Playwright + TypeScript**.
 
-QA Engineer с фокусом на **автоматизации тестирования, API, CI/CD quality gates и диагностируемой тестовой инфраструктуре**.
+В портфолио делаю акцент на системном подходе к качеству: риск-ориентированной стратегии, обязательных проверках в CI, воспроизводимых запусках, диагностике причин сбоев, сохранении доказательств, нефункциональном тестировании и прозрачности состояния системы.
 
-Санкт-Петербург · рассматриваю удалённый / гибридный / офисный формат
+Санкт-Петербург · рассматриваю удалённый, гибридный и офисный формат работы
 
-Работаю с ручным и автоматизированным тестированием Web/API. Основное направление автоматизации — **Playwright + TypeScript**. В portfolio-проектах строю воспроизводимые CI-пайплайны, разделяю независимые quality signals, сохраняю failure diagnostics и не маскирую реальные ошибки retries или вспомогательными интеграциями.
+## Профессиональный подход
 
-## Portfolio highlights
+Для меня качество — это управляемая инженерная система, а не количество тестов. Каждый уровень проверки должен отвечать на конкретный вопрос, а результат CI должен позволять быстро понять, что именно сломалось, где находится причина и какое действие требуется дальше.
 
-| Область | Что реализовано |
+В проектах придерживаюсь следующих принципов:
+
+- строить набор проверок от рисков продукта и инфраструктуры;
+- не скрывать нестабильность повторными попытками;
+- разделять функциональные, инфраструктурные и проверки безопасности;
+- сохранять отчёты, журналы и диагностические материалы для разбора сбоев;
+- отделять уведомления и внешние интеграции от фактического результата тестов;
+- фиксировать правила слияния, критерии успешности и порядок разбора инцидентов в документации.
+
+## Ключевые компетенции
+
+| Направление | Практика |
 | --- | --- |
-| Test Automation | Playwright + TypeScript, Unit / API / E2E, POM, fixtures, helpers, test-data factories |
-| Cross-browser CI | Chromium / Firefox / WebKit, GitHub Actions, `workers=1`, `retries=0` для live E2E |
-| Reporting & Diagnostics | Allure, Playwright HTML, JUnit XML, trace, screenshots, video, failure artifacts, Actions Summary |
-| Non-functional QA | Accessibility (axe-core), Lighthouse, Visual Regression, security и stability checks |
-| Quality governance | protected `main`, strict required checks, risk-based Test Strategy, merge policy, dependency maintenance |
-| Operational QA | incident runbooks, signal ownership, severity/triage, evidence-preserving rerun policy, structured incident issue forms |
-| Observability | Telegram notifications для PR / push / manual / scheduled runs; transport отделён от test/security source of truth |
-| Infrastructure | Docker, Jenkins, PostgreSQL, container runtime smoke, non-root policy, Trivy, CycloneDX SBOM |
+| Автоматизация тестирования | Playwright + TypeScript, модульные, API и сквозные проверки, Page Object Model, фикстуры, вспомогательные функции, подготовка тестовых данных |
+| Межбраузерное тестирование | Chromium, Firefox, WebKit; управляемые запуски в GitHub Actions |
+| CI/CD и контроль качества | обязательные проверки перед слиянием, защищённая ветка `main`, правила слияния, GitHub Actions, Jenkins |
+| Отчётность и диагностика | Allure, Playwright HTML, JUnit XML, трассировки, снимки экрана, видео, артефакты ошибок, GitHub Actions Summary |
+| Нефункциональное тестирование | доступность интерфейса с axe-core, Lighthouse, визуальная регрессия, проверки стабильности |
+| Безопасность | npm audit, Trivy, CycloneDX SBOM, Dependabot, проверка достижимости уязвимого кода |
+| Инфраструктура | Docker, PostgreSQL, проверка реального запуска контейнера, контроль запуска без root, синтетические проверки состояния |
+| Управление качеством | риск-ориентированная стратегия, критерии входа и выхода, правила разбора сбоев, регламенты инцидентов |
+| Наблюдаемость | структурированные уведомления в Telegram для запросов на слияние, изменений в `main`, ручных и плановых запусков |
 
-### Live CI status
+## Текущий статус CI
 
 [![PomidorQA CI](https://github.com/TokhirjonYuldoshev/pomidorqa-tests/actions/workflows/playwright.yml/badge.svg)](https://github.com/TokhirjonYuldoshev/pomidorqa-tests/actions/workflows/playwright.yml)
 [![Database Health](https://github.com/TokhirjonYuldoshev/qa-docker-monitor/actions/workflows/main.yml/badge.svg)](https://github.com/TokhirjonYuldoshev/qa-docker-monitor/actions/workflows/main.yml)
@@ -37,104 +49,99 @@ QA Engineer с фокусом на **автоматизации тестиров
 
 ### 1. [PomidorQA QA Automation](https://github.com/TokhirjonYuldoshev/pomidorqa-tests)
 
-Основной standalone-проект по **QA Automation на Playwright + TypeScript**.
+Основной проект по автоматизации тестирования на **Playwright + TypeScript**. В нём собрана многоуровневая система контроля качества: от модульных и API-проверок до межбраузерных сквозных тестов, проверок безопасности и нефункционального тестирования.
 
-- Unit / API / E2E уровни тестирования;
-- Chromium / Firefox / WebKit в автоматическом browser matrix;
-- Page Object Model, fixtures, helpers и уникальные test data;
-- GitHub Actions CI с `workers=1` и `retries=0` для live E2E;
-- детерминированный локальный preflight: Node 24 runtime guard → lint → typecheck → Unit → API;
-- Allure + Playwright HTML, trace/screenshots/video и failure artifacts;
-- Nightly Regression и отдельный Stability workflow без retries;
-- Accessibility Audit, Lighthouse и Visual Regression;
-- security gates, controlled Dependabot maintenance и CycloneDX npm SBOM evidence;
-- отдельные структурированные Telegram notifications для основного CI, Nightly, Security, Stability, Accessibility, Lighthouse и Visual Regression;
-- Telegram transport работает как независимый observability-layer и не подменяет результат тестов или quality/security gates;
-- protected `main` со strict required checks и risk-based QA quality-gate policy;
-- отдельная [Risk-Based Test Strategy](https://github.com/TokhirjonYuldoshev/pomidorqa-tests/blob/main/docs/test-strategy.md): risk model, ownership boundaries, failure triage, entry/exit criteria и quality metrics;
-- [QA Automation CI Incident Runbook](https://github.com/TokhirjonYuldoshev/pomidorqa-tests/blob/main/docs/ci-incident-runbook.md): signal ownership, cross-browser triage, live-environment policy, severity и resolution criteria;
-- manual-only Registration Contract Smoke для реального HTTP-контракта регистрации.
+- модульные, API и сквозные уровни тестирования;
+- Chromium, Firefox и WebKit в автоматической матрице браузеров;
+- Page Object Model, фикстуры, вспомогательные функции и управляемые тестовые данные;
+- GitHub Actions с `workers=1` и `retries=0` для сквозных проверок живого окружения;
+- локальная последовательность обязательных проверок: Node.js 24 → статический анализ → проверка типов → модульные тесты → API-тесты;
+- Allure, Playwright HTML, трассировки, снимки экрана, видео и диагностические материалы при сбоях;
+- ночной регрессионный запуск и отдельная проверка стабильности без повторных попыток;
+- проверки доступности интерфейса, производительности через Lighthouse и визуальной регрессии;
+- npm audit, CycloneDX SBOM и контролируемые обновления Dependabot;
+- отдельные уведомления в Telegram для основного CI, ночной регрессии, безопасности, стабильности, доступности, Lighthouse и визуальной регрессии;
+- защищённая ветка `main` с обязательными проверками перед слиянием;
+- [риск-ориентированная стратегия тестирования](https://github.com/TokhirjonYuldoshev/pomidorqa-tests/blob/main/docs/test-strategy.md) и [регламент разбора сбоев CI](https://github.com/TokhirjonYuldoshev/pomidorqa-tests/blob/main/docs/ci-incident-runbook.md);
+- ручная проверка Registration Contract Smoke для реального HTTP-контракта регистрации.
 
-**Стек:** Playwright · TypeScript · Node.js 24 · GitHub Actions · Allure · axe-core · Lighthouse · CycloneDX · Telegram Bot API
+**Технологии:** Playwright · TypeScript · Node.js 24 · GitHub Actions · Allure · axe-core · Lighthouse · CycloneDX · Telegram Bot API
 
 ### 2. [Гибридный QA-мониторинг PostgreSQL](https://github.com/TokhirjonYuldoshev/qa-docker-monitor)
 
-QA-проект, где health signal основан не на `ping`, а на **реальной записи в PostgreSQL с последующим read-back**. Scheduled GitHub Actions path — это синтетический canary на изолированном PostgreSQL service container, а Windows/Jenkins-compatible path предназначен для отдельно управляемого контейнера.
+Проект по контролю состояния PostgreSQL, где итог определяется не простым `ping`, а **реальной записью данных с последующим точным чтением и проверкой результата**.
 
-- PostgreSQL 16 service container и scheduled synthetic SQL write/read canary в GitHub Actions;
-- per-run markers для cloud и Windows/Jenkins paths: `CREATE / INSERT / SELECT` и exact read-back assertion как source of truth;
-- Windows/Jenkins contract tests с изолированными command doubles, включая проверку точного marker-фильтра в read-back query;
-- `CI / Required gate` агрегирует обязательные monitoring signals;
-- отдельный `PostgreSQL Image Security` workflow: Trivy CRITICAL scan, exact `gosu` binary reachability через `govulncheck` и CycloneDX SBOM evidence;
-- структурированный GitHub Actions Summary;
-- Telegram observability для database health и PostgreSQL Image Security работает на PR / push / manual / scheduled runs;
-- Telegram transport отделён от DB/security source of truth и не может скрыть реальный failure;
-- отдельный manual Telegram diagnostic workflow (`getMe` → `getChat` → `sendMessage`);
-- [Monitoring Boundary](https://github.com/TokhirjonYuldoshev/qa-docker-monitor/blob/main/docs/monitoring-boundary.md) фиксирует границы synthetic и separately-managed monitoring paths;
-- [Monitoring Incident Runbook](https://github.com/TokhirjonYuldoshev/qa-docker-monitor/blob/main/docs/incident-runbook.md) + structured incident issue form;
-- Dependabot, PR risk review и security policy.
+- PostgreSQL 16 в контейнере GitHub Actions и плановая синтетическая проверка записи и чтения;
+- уникальный маркер каждого запуска и точная проверка `CREATE / INSERT / SELECT`;
+- контрактные проверки для Windows/Jenkins с изолированными заменителями внешних команд;
+- обязательная проверка `CI / Required gate`, объединяющая критичные сигналы;
+- отдельная проверка `PostgreSQL Image Security`: Trivy для критических уязвимостей, `govulncheck` для проверки достижимости уязвимого кода и CycloneDX SBOM;
+- структурированный итог каждого запуска в GitHub Actions Summary;
+- уведомления в Telegram для проверки базы данных и безопасности PostgreSQL на запросах на слияние, изменениях в `main`, ручных и плановых запусках;
+- сбой Telegram не влияет на фактический результат проверки базы данных или политики безопасности;
+- [описание границ мониторинга](https://github.com/TokhirjonYuldoshev/qa-docker-monitor/blob/main/docs/monitoring-boundary.md) и [регламент разбора инцидентов](https://github.com/TokhirjonYuldoshev/qa-docker-monitor/blob/main/docs/incident-runbook.md);
+- Dependabot, анализ рисков изменений и политика безопасности.
 
-**Стек:** PostgreSQL · Docker · GitHub Actions · Jenkins · Windows · Trivy · CycloneDX · govulncheck · Telegram Bot API
+**Технологии:** PostgreSQL · Docker · GitHub Actions · Jenkins · Windows · Trivy · CycloneDX · govulncheck · Telegram Bot API
 
 ### 3. [Jenkins + Docker: CI/CD-пайплайн для QA](https://github.com/TokhirjonYuldoshev/my-docker-project)
 
-Компактный проект, сфокусированный на **pipeline design и независимых quality gates**, а не на искусственном количестве тестов.
+Инфраструктурный проект, который показывает построение независимых проверок качества в CI/CD без искусственного увеличения количества тестов.
 
-- GitHub Actions: dependency integrity (`pip check`) + Flake8, Pytest с JUnit evidence, Docker build + **container runtime smoke**;
-- Docker CI отдельно подтверждает declared non-root runtime user;
-- Trivy container-security gate блокирует fixable `CRITICAL` vulnerabilities и сохраняет CycloneDX container SBOM evidence;
-- независимые checks агрегируются в стабильный `CI / Required gate`;
-- Python 3.12 baseline, non-root Docker runtime и pinned development dependencies;
-- controlled Dependabot updates для Python, GitHub Actions и Docker base image;
-- weekly full baseline validation повторно проверяет runtime/security drift даже без code changes;
-- Jenkins Declarative Pipeline: dependency check → lint → tests → build → non-root policy → runtime smoke; Docker process exit и stdout contract проверяются раздельно, Docker Hub publish разрешён только из `main`;
-- [CI/CD Pipeline Incident Runbook](https://github.com/TokhirjonYuldoshev/my-docker-project/blob/main/docs/pipeline-incident-runbook.md) + structured incident issue form;
-- [Scope and non-goals](https://github.com/TokhirjonYuldoshev/my-docker-project/blob/main/docs/scope-and-nongoals.md) фиксирует, что проект демонстрирует pipeline quality engineering, а не изображает production application или production SRE platform;
-- Telegram CI observability отправляет структурированный итог для Pull Request, push в `main`, manual и weekly runs;
-- manual-only Telegram diagnostics;
-- notification transport не подменяет реальный build/test/security signal.
+- проверка зависимостей через `pip check`, статический анализ Flake8 и Pytest с JUnit-отчётом;
+- сборка Docker-образа и проверка реального запуска контейнера;
+- отдельный контроль запуска от непривилегированного пользователя;
+- Trivy блокирует исправляемые уязвимости уровня `CRITICAL`, CycloneDX сохраняет SBOM;
+- независимые проверки объединены в обязательный `CI / Required gate`;
+- Python 3.12 и закреплённые версии зависимостей разработки;
+- еженедельная полная проверка для выявления изменений в инфраструктуре и безопасности;
+- Jenkins Declarative Pipeline: зависимости → статический анализ → тесты → сборка → контроль пользователя → проверка запуска контейнера;
+- публикация Docker Hub разрешена только из `main`;
+- [регламент разбора сбоев CI/CD](https://github.com/TokhirjonYuldoshev/my-docker-project/blob/main/docs/pipeline-incident-runbook.md) и [границы и ограничения проекта](https://github.com/TokhirjonYuldoshev/my-docker-project/blob/main/docs/scope-and-nongoals.md);
+- уведомления в Telegram для запросов на слияние, изменений в `main`, ручных и еженедельных запусков;
+- транспорт уведомлений не изменяет результат сборки, тестов или проверок безопасности.
 
-**Стек:** Python 3.12 · Pytest · Flake8 · Docker · Trivy · CycloneDX · Jenkins · GitHub Actions · Docker Hub · Telegram Bot API
+**Технологии:** Python 3.12 · Pytest · Flake8 · Docker · Trivy · CycloneDX · Jenkins · GitHub Actions · Docker Hub · Telegram Bot API
 
 ---
 
 <details>
-<summary><b>Manual QA / API / SQL / Mobile portfolio</b></summary>
+<summary><b>Ручное тестирование, API, SQL и мобильные приложения</b></summary>
 
-### Web testing — DemoShopping
+### Веб-тестирование — DemoShopping
 
-- 5 чек-листов и **45+ тест-кейсов** на корзину, checkout и оплату;
-- **28 баг-репортов**, включая blocker-дефекты;
-- локализация проблем через DevTools Network / Console;
-- API testing и SQL-верификация данных.
+- 5 чек-листов и **45+ тест-кейсов** для корзины, оформления заказа и оплаты;
+- **28 баг-репортов**, включая блокирующие дефекты;
+- локализация проблем через DevTools Network и Console;
+- API-тестирование и SQL-проверка данных.
 
-[Открыть Web-документацию](https://docs.google.com/spreadsheets/d/10L3WmvIuV3qYr8N86WoHXyFqlFgBHpgU7K7eCbUssYk/edit?pli=1&gid=0#gid=0)
+[Открыть документацию по веб-тестированию](https://docs.google.com/spreadsheets/d/10L3WmvIuV3qYr8N86WoHXyFqlFgBHpgU7K7eCbUssYk/edit?pli=1&gid=0#gid=0)
 
-### API testing — Postman
+### API-тестирование — Postman
 
 - [PetStore Collection](./PetStore.postman_collection.json) — `User`, `Pet`, `Store`, CRUD;
 - [DemoShopping Collection](./DemoShopping.postman_collection.json) — `Products`, `Cart`, `Orders`, `Payment`;
-- E2E API scenarios и автопроверки в Postman Runner.
+- сквозные API-сценарии и автоматические проверки в Postman Runner.
 
-### SQL & NoSQL
+### SQL и NoSQL
 
-SQL: JOIN, подзапросы, агрегаты. Практика с PostgreSQL, MySQL и MongoDB.
+SQL: JOIN, подзапросы, агрегатные функции. Практика с PostgreSQL, MySQL и MongoDB.
 
 [Примеры SQL / NoSQL](https://docs.google.com/spreadsheets/d/10L3WmvIuV3qYr8N86WoHXyFqlFgBHpgU7K7eCbUssYk/edit?pli=1&gid=1293622627#gid=1293622627)
 
-### Mobile testing
+### Мобильное тестирование
 
 - Android: установка, прерывания, смена темы и пользовательские сценарии;
-- **30 тест-кейсов** на основной flow;
-- bug reports на критические crash-сценарии с логами и шагами воспроизведения.
+- **30 тест-кейсов** на основной пользовательский сценарий;
+- баг-репорты по критичным падениям приложения с логами и шагами воспроизведения.
 
-[Открыть Mobile-документацию](https://docs.google.com/spreadsheets/d/10L3WmvIuV3qYr8N86WoHXyFqlFgBHpgU7K7eCbUssYk/edit?pli=1&gid=292251871#gid=292251871)
+[Открыть документацию по мобильному тестированию](https://docs.google.com/spreadsheets/d/10L3WmvIuV3qYr8N86WoHXyFqlFgBHpgU7K7eCbUssYk/edit?pli=1&gid=292251871#gid=292251871)
 
 </details>
 
 ---
 
-## Стек
+## Технологии и инструменты
 
 `Playwright` `TypeScript` `Postman` `REST API` `SQL` `PostgreSQL` `MySQL` `MongoDB` `Git` `GitHub Actions` `Docker` `Trivy` `CycloneDX` `Jenkins` `Python` `Pytest` `Allure` `DevTools` `Jira` `YouTrack` `Qase` `TestRail` `Charles Proxy`
 
@@ -143,7 +150,7 @@ SQL: JOIN, подзапросы, агрегаты. Практика с PostgreSQ
 <details>
 <summary><b>Обучение и образование</b></summary>
 
-### QA / AQA
+### Тестирование и автоматизация
 
 1. **[Тестирование ПО с нуля. Теория + практика. Продвинутый курс с ИИ](https://stepik.org/course/245575/promo)** — Артём Русов, Stepik
 2. **SQL практикум. SELECT-запросы** — Pragmatic Programmer, Stepik
@@ -155,7 +162,7 @@ SQL: JOIN, подзапросы, агрегаты. Практика с PostgreSQ
 - **Санкт-Петербургский государственный технологический институт (СПбГТИ)** — Бизнес-информатика, 2024–н.в.
 - **Южно-Казахстанская государственная медицинская академия (ЮКГМА)** — Фармация, провизор, 2006.
 
-Профильный фармацевтический бэкграунд помогает быстро погружаться в предметную область, в том числе MedTech.
+Фармацевтический бэкграунд помогает быстро погружаться в предметную область, в том числе в проекты MedTech.
 
 </details>
 
