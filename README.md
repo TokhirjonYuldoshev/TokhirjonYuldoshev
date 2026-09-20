@@ -2,9 +2,9 @@
 
 ## QA Automation Engineer · Playwright / TypeScript · API · CI/CD · Docker
 
-Автоматизирую проверку веб-приложений и API и строю CI-процессы, в которых результат можно **доказать, воспроизвести и быстро диагностировать**.
+Автоматизирую проверку веб-приложений и API и строю CI-процессы, где результат можно **доказать, воспроизвести и быстро диагностировать**.
 
-Основной стек: **Playwright + TypeScript**, REST API, SQL, GitHub Actions, Docker и Jenkins. В проектах связываю требования с конкретными проверками, разделяю функциональные и инфраструктурные сигналы и не использую retries как способ скрыть нестабильность.
+Работаю с **Playwright + TypeScript**, REST API, SQL, GitHub Actions, Docker и Jenkins. Основной подход: требования связываются с конкретными проверками, функциональные и инфраструктурные сигналы разделяются, а retries не используются для маскировки нестабильности.
 
 **Санкт-Петербург · удалённый / гибридный / офисный формат**
 
@@ -13,51 +13,52 @@
 [![Database Health](https://github.com/TokhirjonYuldoshev/qa-docker-monitor/actions/workflows/main.yml/badge.svg)](https://github.com/TokhirjonYuldoshev/qa-docker-monitor/actions/workflows/main.yml)
 [![Python & Docker CI](https://github.com/TokhirjonYuldoshev/my-docker-project/actions/workflows/ci.yml/badge.svg)](https://github.com/TokhirjonYuldoshev/my-docker-project/actions/workflows/ci.yml)
 
+[PomidorQA](https://github.com/TokhirjonYuldoshev/pomidorqa-tests) ·
+[Coverage matrix](https://github.com/TokhirjonYuldoshev/pomidorqa-tests/blob/main/docs/coverage-matrix.md) ·
+[LinkedIn](https://www.linkedin.com/in/tokhirjon-yuldoshev/) ·
+[Telegram](https://t.me/TokhirjonYuldoshev) ·
+[Email](mailto:toxir.yuldoshev1983@gmail.com)
+
 ---
 
-## Инженерный фокус
+## Инженерный подход
 
-- **Requirements → evidence:** требование связывается с конкретным test case, а не только с именем spec-файла.
-- **Надёжный тестовый сигнал:** `retries=0`, управляемые данные, отдельные BrowserContext, причинные ожидания вместо произвольных sleep.
-- **CI как система контроля качества:** обязательные gates, branch protection, агрегирующие проверки, отчёты и диагностические artifacts.
-- **Разделение ответственности:** продуктовые ошибки, инфраструктурные сбои, security findings и проблемы доставки уведомлений не смешиваются в один сигнал.
-- **Нефункциональные проверки:** accessibility, Lighthouse, visual regression, container/security scanning и SBOM.
-- **Incident-ready диагностика:** trace, screenshots, video, JUnit/JSON, Allure, GitHub Actions Summary и runbooks.
+- **Requirements → evidence:** требование связано с конкретным test case, а не только с названием spec-файла.
+- **Надёжный тестовый сигнал:** `retries=0`, уникальные данные, отдельные `BrowserContext`, причинные ожидания вместо произвольных sleep.
+- **CI как quality system:** обязательные gates, branch protection, агрегирующие проверки, security checks и machine-readable reports.
+- **Диагностика без угадывания:** trace, screenshots, video, JUnit/JSON, Allure, GitHub Actions Summary и incident runbooks.
+- **Разделение сигналов:** продуктовые дефекты, CI/infrastructure incidents, security findings и notification failures имеют разных владельцев и не подменяют друг друга.
 
-## Ключевые результаты
+## Подтверждённые результаты
 
-| Область | Подтверждённый результат |
+| Область | Результат |
 | --- | --- |
-| Requirement coverage | **50 / 50** требований имеют статус; **45 / 50 automated (90%)** |
-| Traceability | requirement → **точный spec-файл → конкретный `test(...)` / `test.fail(...)`** |
-| Автоматизированные проверки | **121**: 10 Unit + 11 API + 100 E2E |
+| Requirement audit | **50 / 50** требований имеют определённый статус |
+| Automated coverage | **45 / 50 (90%)** требований подтверждаются автоматизированными проверками |
+| Exact traceability | **50 уникальных test-case references** в **22 test-файлах** |
+| Автоматизация | **121 проверка**: 10 Unit + 11 API + 100 E2E |
 | Cross-browser | 100 E2E в **Chromium + Firefox + WebKit**, `retries=0` |
-| GitHub Actions | **10 отдельных workflows** в основном automation-проекте |
-| CI concurrency | `workers=4` внутри browser job, `max-parallel=2` |
-| Security / quality | npm audit, Trivy, CycloneDX SBOM, Dependabot, pinned Actions |
+| GitHub Actions | **10 workflows** в основном automation-проекте |
+| Security / quality | npm audit, dependency review, Trivy, CycloneDX SBOM, Dependabot, pinned Actions |
 
 ---
 
-## Ключевые проекты
+## Избранные проекты
 
-### [PomidorQA — система автоматизации тестирования](https://github.com/TokhirjonYuldoshev/pomidorqa-tests)
+### [PomidorQA — test automation system](https://github.com/TokhirjonYuldoshev/pomidorqa-tests)
 
-Основной проект на **Playwright + TypeScript** с многоуровневой автоматизацией, cross-browser CI и проверяемой связью между требованиями и тестами.
+Основной проект на **Playwright + TypeScript**: многоуровневая автоматизация, cross-browser regression и проверяемая traceability от требования до объявленного `test(...)`.
 
-- **50 / 50 требований** прошли аудит покрытия;
-- **45 требований** подтверждаются автоматизированными проверками;
+- **50 / 50 requirements** прошли аудит; **45 / 50 automated**;
 - **121 проверка**: Unit, API и E2E;
-- **100 E2E** выполняются в Chromium, Firefox и WebKit;
-- Page Objects, fixtures, API-based Arrange и централизованный cleanup;
-- отдельные Accessibility, Lighthouse, Visual Regression, Nightly, Stability и AI Review workflows;
-- security gates: npm audit, dependency review, CycloneDX SBOM;
-- Allure, Playwright HTML, JSON/JUnit, traces, screenshots и video;
-- branch protection, squash-only merge flow и обязательные checks;
-- точная traceability: requirement → test-файл → объявленный `test(...)`.
+- **100 E2E** исполняются в Chromium, Firefox и WebKit;
+- Page Objects, fixtures, API-based Arrange, централизованный cleanup и независимые BrowserContext;
+- Accessibility, Lighthouse, Visual Regression, Nightly, Stability и AI Review вынесены в отдельные workflows;
+- обязательные CI/security gates, Allure, Playwright HTML, JSON/JUnit, traces, screenshots и video;
+- squash-only merge flow и защищённый `main`.
 
-Полезные документы:
-[coverage matrix](https://github.com/TokhirjonYuldoshev/pomidorqa-tests/blob/main/docs/coverage-matrix.md) ·
-[test strategy](https://github.com/TokhirjonYuldoshev/pomidorqa-tests/blob/main/docs/test-strategy.md) ·
+[Coverage matrix](https://github.com/TokhirjonYuldoshev/pomidorqa-tests/blob/main/docs/coverage-matrix.md) ·
+[Test strategy](https://github.com/TokhirjonYuldoshev/pomidorqa-tests/blob/main/docs/test-strategy.md) ·
 [CI incident runbook](https://github.com/TokhirjonYuldoshev/pomidorqa-tests/blob/main/docs/ci-incident-runbook.md)
 
 **Стек:** Playwright · TypeScript · Node.js 24 · GitHub Actions · Allure · axe-core · Lighthouse · CycloneDX
@@ -66,15 +67,14 @@
 
 ### [QA Docker Monitor — PostgreSQL health & contract monitoring](https://github.com/TokhirjonYuldoshev/qa-docker-monitor)
 
-Мониторинг, где состояние БД подтверждается не доступностью порта, а **реальной записью и точным read-back текущего запуска**.
+Система мониторинга, где исправность БД подтверждается не только доступностью порта, а **реальной записью и точным read-back текущего запуска**.
 
 - synthetic PostgreSQL health check с уникальным marker каждого run;
-- Windows/Jenkins-compatible contract tests для production monitor script;
-- aggregate `CI / Required gate`;
+- Windows/Jenkins-compatible contract tests для monitor script;
+- единый `CI / Required gate`;
 - Trivy, CycloneDX SBOM и reachability-проверка через `govulncheck`;
-- структурированные GitHub Actions Summary;
-- Telegram используется как observability transport и не переписывает database-health exit code;
-- документированные monitoring boundaries и incident runbook.
+- Telegram остаётся observability transport и не переписывает database-health exit code;
+- monitoring boundaries и incident response задокументированы.
 
 **Стек:** PostgreSQL · Docker · GitHub Actions · Jenkins · Windows · Trivy · CycloneDX · govulncheck
 
@@ -82,13 +82,11 @@
 
 ### [Python + Docker — CI/CD quality pipeline](https://github.com/TokhirjonYuldoshev/my-docker-project)
 
-Проект по построению независимых quality-сигналов для Python/Docker delivery pipeline.
+Pipeline с независимыми quality-сигналами для Python/Docker delivery.
 
 - `pip check`, Flake8 и Pytest с JUnit evidence;
-- Docker build + реальный runtime smoke;
-- проверка non-root runtime user;
-- Trivy для fixable `CRITICAL` findings;
-- CycloneDX SBOM;
+- Docker build + runtime smoke + non-root policy;
+- Trivy для fixable `CRITICAL` findings и CycloneDX SBOM;
 - единый `CI / Required gate`;
 - Jenkins Declarative Pipeline;
 - публикация Docker image разрешена только из подтверждённой `main`;
@@ -102,13 +100,13 @@
 
 | Направление | Инструменты |
 | --- | --- |
-| Test Automation | Playwright, TypeScript, Pytest, Postman |
+| Automation | Playwright, TypeScript, Pytest, Postman |
 | API & Data | REST API, SQL, PostgreSQL, MySQL, MongoDB |
 | CI/CD | GitHub Actions, Jenkins, Docker, Dependabot |
-| Reporting | Allure, Playwright HTML, JUnit, JSON reports |
+| Reporting | Allure, Playwright HTML, JUnit, JSON |
 | Security | npm audit, Trivy, CycloneDX SBOM |
 | Non-functional | axe-core, Lighthouse, Visual Regression |
-| QA tools | DevTools, Charles Proxy, Jira, YouTrack, Qase, TestRail |
+| QA / Debugging | DevTools, Charles Proxy, Jira, YouTrack, Qase, TestRail |
 | Version Control | Git, GitHub |
 
 <details>
@@ -123,7 +121,7 @@
 
 [Документация DemoShopping](https://docs.google.com/spreadsheets/d/10L3WmvIuV3qYr8N86WoHXyFqlFgBHpgU7K7eCbUssYk/edit?pli=1&gid=0#gid=0)
 
-### Postman
+### API / Postman
 
 - [PetStore Collection](./PetStore.postman_collection.json) — User / Pet / Store / CRUD;
 - [DemoShopping Collection](./DemoShopping.postman_collection.json) — Products / Cart / Orders / Payment;
@@ -131,7 +129,7 @@
 
 ### SQL / NoSQL
 
-JOIN, подзапросы, агрегатные функции; практика с PostgreSQL, MySQL и MongoDB.
+JOIN, подзапросы и агрегатные функции; практика с PostgreSQL, MySQL и MongoDB.
 
 [Примеры SQL / NoSQL](https://docs.google.com/spreadsheets/d/10L3WmvIuV3qYr8N86WoHXyFqlFgBHpgU7K7eCbUssYk/edit?pli=1&gid=1293622627#gid=1293622627)
 
