@@ -25,89 +25,108 @@
 
 Тестирую веб-приложения и REST API вручную и автоматизирую ключевые сценарии так, чтобы результат можно было **доказать, воспроизвести и быстро диагностировать**.
 
-Основной стек: **Playwright + TypeScript**, REST API, Postman, Chrome DevTools, SQL, Git и GitHub Actions. Docker и Jenkins использую в отдельных учебных инженерных проектах. Основной подход: требования связываются с конкретными проверками, функциональные и инфраструктурные сигналы разделяются, а retries не используются для маскировки нестабильности.
+Основной стек: **Playwright + TypeScript**, REST API, Postman, Chrome DevTools, SQL, Git и GitHub Actions.
 
 **Санкт-Петербург · удалённый / гибридный / офисный формат**
 
 [![PomidorQA CI](https://github.com/TokhirjonYuldoshev/pomidorqa-tests/actions/workflows/playwright.yml/badge.svg)](https://github.com/TokhirjonYuldoshev/pomidorqa-tests/actions/workflows/playwright.yml)
 [![PomidorQA Security](https://github.com/TokhirjonYuldoshev/pomidorqa-tests/actions/workflows/security.yml/badge.svg)](https://github.com/TokhirjonYuldoshev/pomidorqa-tests/actions/workflows/security.yml)
-[![Database Health](https://github.com/TokhirjonYuldoshev/qa-docker-monitor/actions/workflows/main.yml/badge.svg)](https://github.com/TokhirjonYuldoshev/qa-docker-monitor/actions/workflows/main.yml)
-[![Python & Docker CI](https://github.com/TokhirjonYuldoshev/my-docker-project/actions/workflows/ci.yml/badge.svg)](https://github.com/TokhirjonYuldoshev/my-docker-project/actions/workflows/ci.yml)
 
 ---
 
-## Инженерный подход
+## Избранные QA-проекты
 
-- **Requirements → evidence:** требование связано с конкретным test case, а не только с названием spec-файла.
-- **Надёжный тестовый сигнал:** `retries=0`, уникальные данные, отдельные `BrowserContext`, причинные ожидания вместо произвольных sleep.
-- **CI как quality system:** обязательные gates, branch protection, агрегирующие проверки, security checks и machine-readable reports.
-- **Диагностика без угадывания:** trace, screenshots, video, JUnit/JSON, Allure, GitHub Actions Summary и incident runbooks.
-- **Разделение сигналов:** продуктовые дефекты, CI/infrastructure incidents, security findings и notification failures имеют разных владельцев и не подменяют друг друга.
+### [PomidorQA — Automation QA](https://github.com/TokhirjonYuldoshev/pomidorqa-tests)
 
-## Подтверждённые результаты
+Основной automation-проект на **Playwright + TypeScript** с Unit, API и E2E-проверками, cross-browser regression и traceability от требований до тестов.
 
-| Область | Результат |
-| --- | --- |
-| Requirement audit | **50 / 50** требований имеют определённый статус |
-| Automated coverage | **45 / 50 (90%)** требований подтверждаются автоматизированными проверками |
-| Exact traceability | **50 уникальных test-case references** в **22 test-файлах** |
-| Автоматизация | **121 проверка**: 10 Unit + 11 API + 100 E2E |
-| Cross-browser | 100 E2E в **Chromium + Firefox + WebKit**, `retries=0` |
-| GitHub Actions | **10 workflows** в основном automation-проекте |
-| Security / quality | npm audit, dependency review, Trivy, CycloneDX SBOM, Dependabot, pinned Actions |
+- **50 / 50 requirements** прошли аудит;
+- **45 / 50 requirements automated = 90%**;
+- **121 automated checks**: 10 Unit + 11 API + 100 E2E;
+- **100 E2E** выполняются в Chromium, Firefox и WebKit;
+- **retries=0**;
+- Page Object Model, fixtures/helpers, API-based Arrange и cleanup;
+- GitHub Actions quality gates, Allure, Playwright HTML, JSON/JUnit, traces, screenshots и video.
 
----
+[Repository](https://github.com/TokhirjonYuldoshev/pomidorqa-tests) ·
+[Coverage Matrix](https://github.com/TokhirjonYuldoshev/pomidorqa-tests/blob/main/docs/coverage-matrix.md) ·
+[Test Strategy](https://github.com/TokhirjonYuldoshev/pomidorqa-tests/blob/main/docs/test-strategy.md) ·
+[CI Runbook](https://github.com/TokhirjonYuldoshev/pomidorqa-tests/blob/main/docs/ci-incident-runbook.md)
 
-## Избранные проекты
-
-### [PomidorQA — test automation system](https://github.com/TokhirjonYuldoshev/pomidorqa-tests)
-
-Основной проект на **Playwright + TypeScript**: многоуровневая автоматизация, cross-browser regression и проверяемая traceability от требования до объявленного `test(...)`.
-
-- **50 / 50 requirements** прошли аудит; **45 / 50 automated**;
-- **121 проверка**: Unit, API и E2E;
-- **100 E2E** исполняются в Chromium, Firefox и WebKit;
-- Page Objects, fixtures, API-based Arrange, централизованный cleanup и независимые BrowserContext;
-- Accessibility, Lighthouse, Visual Regression, Nightly, Stability и AI Review вынесены в отдельные workflows;
-- обязательные CI/security gates, Allure, Playwright HTML, JSON/JUnit, traces, screenshots и video;
-- squash-only merge flow и защищённый `main`.
-
-[Coverage matrix](https://github.com/TokhirjonYuldoshev/pomidorqa-tests/blob/main/docs/coverage-matrix.md) ·
-[Test strategy](https://github.com/TokhirjonYuldoshev/pomidorqa-tests/blob/main/docs/test-strategy.md) ·
-[CI incident runbook](https://github.com/TokhirjonYuldoshev/pomidorqa-tests/blob/main/docs/ci-incident-runbook.md)
-
-**Стек:** Playwright · TypeScript · Node.js 24 · GitHub Actions · Allure · axe-core · Lighthouse · CycloneDX
+**Stack:** Playwright · TypeScript · Node.js · GitHub Actions · Allure · axe-core · Lighthouse
 
 ---
 
-### [QA Docker Monitor — PostgreSQL health & contract monitoring](https://github.com/TokhirjonYuldoshev/qa-docker-monitor)
+### [Pizzaed — Manual QA + REST API](https://drive.google.com/drive/folders/1HWGeywjJ2qnSpFE4awpLrqIGwLfKhCHu)
 
-Система мониторинга, где исправность БД подтверждается не только доступностью порта, а **реальной записью и точным read-back текущего запуска**.
+Учебный интернет-магазин: каталог, фильтрация, корзина, промокоды, доставка и оформление заказа.
 
-- synthetic PostgreSQL health check с уникальным marker каждого run;
-- Windows/Jenkins-compatible contract tests для monitor script;
-- единый `CI / Required gate`;
-- Trivy, CycloneDX SBOM и reachability-проверка через `govulncheck`;
-- Telegram остаётся observability transport и не переписывает database-health exit code;
-- monitoring boundaries и incident response задокументированы.
+- подготовил **чек-лист из 163 проверок**;
+- разработал **68 тест-кейсов**;
+- составил test plan со scope, рисками, entry/exit criteria и окружением;
+- собрал Postman collection: **7 API-запросов / 11 автоматических проверок**;
+- Postman Runner: **11 / 11 passed**;
+- использовал variables, JavaScript и dynamic ID chaining;
+- оформил отдельные **Selected Bug Reports**.
 
-**Стек:** PostgreSQL · Docker · GitHub Actions · Jenkins · Windows · Trivy · CycloneDX · govulncheck
+[Test Plan](https://drive.google.com/file/d/15k9sKUtTIPpGfeWJInJ0y-y1pWpPAwGm/view) ·
+[Checklist — 163](https://drive.google.com/file/d/19kPAyDkhjnGMDD6UsfZI0aGNmfVhI7D7/view) ·
+[Test Cases — 68](https://drive.google.com/file/d/1bKqsyOt3x6yEm5yLOcKcuNFYnSf9TwP3/view) ·
+[Postman Collection](https://drive.google.com/file/d/15s96s0tLzJSFMU4XNQOzy27rM-kNWRZp/view) ·
+[Runner 11/11](https://drive.google.com/file/d/1GcxOnm7WePykHxIefxn2ibdl3iZPrGUX/view) ·
+[Bug Reports](https://docs.google.com/document/d/1SW8HppEPKJh7--DG1pnzdFJosgVcwpBKWLIWk_IS4ns/edit)
+
+**Stack:** Manual QA · REST API · Postman · Chrome DevTools · Test Design
 
 ---
 
-### [Python + Docker — CI/CD quality pipeline](https://github.com/TokhirjonYuldoshev/my-docker-project)
+## Инженерные практики
 
-Pipeline с независимыми quality-сигналами для Python/Docker delivery.
+- **Requirements → Test Cases → Evidence:** связываю требования с конкретными проверками и результатами.
+- **Test design:** позитивные/негативные сценарии, boundary values, equivalence classes, error guessing.
+- **Automation architecture:** Page Object Model, fixtures, helpers, уникальные данные и изолированные BrowserContext.
+- **API testing:** Arrange/cleanup через API, Postman variables, JavaScript и автоматические assertions.
+- **CI & diagnostics:** GitHub Actions, Allure, Playwright HTML, JUnit/JSON, traces, screenshots и video.
+- **Reliable signal:** retries=0; продуктовые дефекты отделяются от infrastructure/CI failures.
 
-- `pip check`, Flake8 и Pytest с JUnit evidence;
-- Docker build + runtime smoke + non-root policy;
-- Trivy для fixable `CRITICAL` findings и CycloneDX SBOM;
-- единый `CI / Required gate`;
-- Jenkins Declarative Pipeline;
-- публикация Docker image разрешена только из подтверждённой `main`;
-- Telegram отделён от build/test/security result.
+---
 
-**Стек:** Python 3.12 · Pytest · Flake8 · Docker · Trivy · CycloneDX · Jenkins · GitHub Actions
+## Дополнительные инженерные проекты
+
+<details>
+<summary><b>QA Docker Monitor — PostgreSQL health & contract monitoring</b></summary>
+
+Система мониторинга PostgreSQL, где health подтверждается реальной записью и точным read-back текущего запуска.
+
+- synthetic PostgreSQL health check;
+- Windows/Jenkins-compatible contract tests;
+- GitHub Actions quality gate;
+- Trivy и CycloneDX SBOM;
+- Telegram observability.
+
+[Repository](https://github.com/TokhirjonYuldoshev/qa-docker-monitor)
+
+**Stack:** PostgreSQL · PowerShell · Docker · GitHub Actions · Jenkins
+
+</details>
+
+<details>
+<summary><b>Python + Docker — CI/CD quality pipeline</b></summary>
+
+Учебный CI/CD-проект с независимыми quality-сигналами.
+
+- Pytest + JUnit evidence;
+- Flake8 и dependency checks;
+- Docker build + runtime smoke;
+- non-root validation;
+- Trivy и CycloneDX SBOM;
+- Jenkins Declarative Pipeline.
+
+[Repository](https://github.com/TokhirjonYuldoshev/my-docker-project)
+
+**Stack:** Python · Pytest · Docker · GitHub Actions · Jenkins
+
+</details>
 
 ---
 
@@ -115,22 +134,21 @@ Pipeline с независимыми quality-сигналами для Python/Do
 
 | Направление | Инструменты |
 | --- | --- |
-| Automation | Playwright, TypeScript, Pytest, Postman |
-| API & Data | REST API, SQL, PostgreSQL, MySQL, MongoDB |
-| CI/CD | GitHub Actions, Jenkins, Docker, Dependabot |
-| Reporting | Allure, Playwright HTML, JUnit, JSON |
-| Security | npm audit, Trivy, CycloneDX SBOM |
-| Non-functional | axe-core, Lighthouse, Visual Regression |
-| QA / Debugging | DevTools, Charles Proxy, Jira, YouTrack, Qase, TestRail |
+| Manual QA | Test design, Checklists, Test Cases, Bug Reports |
+| Automation | Playwright, TypeScript |
+| API | REST API, Postman, JavaScript |
+| Data | SQL, PostgreSQL, MySQL |
+| QA / Debugging | Chrome DevTools, Charles Proxy |
+| Test Management | TestRail, TestIT, Jira, YouTrack |
+| CI / Reporting | GitHub Actions, Allure, Playwright HTML, JUnit, JSON |
 | Version Control | Git, GitHub |
+| Дополнительно | Docker, Jenkins, Pytest, Trivy, CycloneDX |
 
 <details>
-<summary><b>Образование и предметный бэкграунд</b></summary>
+<summary><b>Образование</b></summary>
 
 - **Санкт-Петербургский государственный технологический институт (СПбГТИ)** — Бизнес-информатика, 2024–н.в.
 - **Южно-Казахстанская государственная медицинская академия (ЮКГМА)** — Фармация, провизор, 2006.
-
-Фармацевтический бэкграунд помогает быстро погружаться в предметную область, особенно в системах с повышенными требованиями к качеству данных и процессов.
 
 </details>
 
@@ -148,10 +166,10 @@ Pipeline с независимыми quality-сигналами для Python/Do
 
 📁 **[QA Portfolio — Tokhirjon Yuldoshev](https://drive.google.com/drive/folders/1jOgOuHUcla3uYUn19Nq9-hPdJ7Xr0nen)**
 
-### Резюме
+### Resume
 - [Yuldoshev_Tokhirjon_QA_Resume.pdf](https://drive.google.com/file/d/1XcQ2rN5_pdjz16d8FeRCuf7ShzFOVSKK/view)
 
-### Pizzaed — Manual QA + REST API
+### Pizzaed
 - [Test_Plan_Pizzaed.docx](https://drive.google.com/file/d/15k9sKUtTIPpGfeWJInJ0y-y1pWpPAwGm/view)
 - [Checklist_Pizzaed_163_checks.docx](https://drive.google.com/file/d/19kPAyDkhjnGMDD6UsfZI0aGNmfVhI7D7/view)
 - [Test_Cases_Pizzaed_68_cases.docx](https://drive.google.com/file/d/1bKqsyOt3x6yEm5yLOcKcuNFYnSf9TwP3/view)
@@ -159,9 +177,9 @@ Pipeline с независимыми quality-сигналами для Python/Do
 - [Postman_Runner_11_of_11.png](https://drive.google.com/file/d/1GcxOnm7WePykHxIefxn2ibdl3iZPrGUX/view)
 - [Pizzaed — Selected Bug Reports](https://docs.google.com/document/d/1SW8HppEPKJh7--DG1pnzdFJosgVcwpBKWLIWk_IS4ns/edit)
 
-### PomidorQA — Automation QA
+### PomidorQA
 - [pomidorqa-tests](https://github.com/TokhirjonYuldoshev/pomidorqa-tests)
-- [PomidorQA — Automation QA Overview](https://docs.google.com/document/d/1F5aDy-gw0pHkVuSmt2PHZuCsvTmBjffh3i5T_u64C7A/edit)
+- [Automation QA Overview](https://docs.google.com/document/d/1F5aDy-gw0pHkVuSmt2PHZuCsvTmBjffh3i5T_u64C7A/edit)
 - [coverage-matrix.md](https://github.com/TokhirjonYuldoshev/pomidorqa-tests/blob/main/docs/coverage-matrix.md)
 
 ### Certificates
