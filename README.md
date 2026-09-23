@@ -19,32 +19,6 @@
 [Telegram](https://t.me/TokhirjonYuldoshev) ·
 [Email](mailto:toxir.yuldoshev1983@gmail.com)
 
-## QA Portfolio
-
-📁 **[Полное QA-портфолио на Google Drive](https://drive.google.com/drive/folders/1jOgOuHUcla3uYUn19Nq9-hPdJ7Xr0nen)**
-
-### Резюме
-- [Resume PDF](https://drive.google.com/file/d/1XcQ2rN5_pdjz16d8FeRCuf7ShzFOVSKK/view)
-- [Resume DOCX](https://drive.google.com/file/d/18LfLcU45SLe4LCb-tHMKUp3Otjr2U43Z/view)
-
-### Pizzaed — Manual QA + REST API
-- [Test Plan](https://drive.google.com/file/d/15k9sKUtTIPpGfeWJInJ0y-y1pWpPAwGm/view)
-- [Checklist — 163 checks](https://drive.google.com/file/d/19kPAyDkhjnGMDD6UsfZI0aGNmfVhI7D7/view)
-- [Test Cases — 68 cases](https://drive.google.com/file/d/1bKqsyOt3x6yEm5yLOcKcuNFYnSf9TwP3/view)
-- [Postman Collection — 7 requests / 11 tests](https://drive.google.com/file/d/15s96s0tLzJSFMU4XNQOzy27rM-kNWRZp/view)
-- [Postman Runner — 11/11 Passed](https://drive.google.com/file/d/1GcxOnm7WePykHxIefxn2ibdl3iZPrGUX/view)
-- [Selected Bug Reports](https://docs.google.com/document/d/1SW8HppEPKJh7--DG1pnzdFJosgVcwpBKWLIWk_IS4ns/edit)
-- [Final Test Cases & Bug Reports](https://docs.google.com/spreadsheets/d/1f925eEyl7HwSNc_S33sPxJ2TY9XCEgX3cDU22LbzEGQ/edit)
-
-### PomidorQA — Automation QA
-- [Repository](https://github.com/TokhirjonYuldoshev/pomidorqa-tests)
-- [Automation overview on Drive](https://docs.google.com/document/d/1F5aDy-gw0pHkVuSmt2PHZuCsvTmBjffh3i5T_u64C7A/edit)
-- [Coverage matrix](https://github.com/TokhirjonYuldoshev/pomidorqa-tests/blob/main/docs/coverage-matrix.md)
-
-### Additional practice & certificates
-- [Certificates](https://drive.google.com/drive/folders/1iMNJ7UCQ5xz69Uy0mDM2vGnYydHUeNhJ)
-- [Manual / SQL / TMS practice](https://docs.google.com/spreadsheets/d/1XXJAuQ9iydcu5j6hbRwBvCAy5JOgSdZAhk3hFj043SI/edit)
-
 ---
 
 ## Инженерный подход
@@ -136,40 +110,6 @@ Pipeline с независимыми quality-сигналами для Python/Do
 | Version Control | Git, GitHub |
 
 <details>
-<summary><b>Дополнительная QA-практика: manual, API, SQL, mobile</b></summary>
-
-### Web / manual testing
-
-- 5 чек-листов и **45+ тест-кейсов** для корзины, checkout и оплаты;
-- **28 баг-репортов**;
-- локализация проблем через DevTools Network и Console;
-- API- и SQL-проверки данных.
-
-[Документация DemoShopping](https://docs.google.com/spreadsheets/d/10L3WmvIuV3qYr8N86WoHXyFqlFgBHpgU7K7eCbUssYk/edit?pli=1&gid=0#gid=0)
-
-### API / Postman
-
-- [PetStore Collection](./PetStore.postman_collection.json) — User / Pet / Store / CRUD;
-- [DemoShopping Collection](./DemoShopping.postman_collection.json) — Products / Cart / Orders / Payment;
-- сквозные API-сценарии и автоматические проверки.
-
-### SQL / NoSQL
-
-JOIN, подзапросы и агрегатные функции; практика с PostgreSQL, MySQL и MongoDB.
-
-[Примеры SQL / NoSQL](https://docs.google.com/spreadsheets/d/10L3WmvIuV3qYr8N86WoHXyFqlFgBHpgU7K7eCbUssYk/edit?pli=1&gid=1293622627#gid=1293622627)
-
-### Mobile
-
-- Android: installation, interruptions, theme switching и пользовательские сценарии;
-- **30 тест-кейсов** на основной пользовательский путь;
-- баг-репорты с логами и воспроизводимыми шагами.
-
-[Документация по mobile testing](https://docs.google.com/spreadsheets/d/10L3WmvIuV3qYr8N86WoHXyFqlFgBHpgU7K7eCbUssYk/edit?pli=1&gid=292251871#gid=292251871)
-
-</details>
-
-<details>
 <summary><b>Образование и предметный бэкграунд</b></summary>
 
 - **Санкт-Петербургский государственный технологический институт (СПбГТИ)** — Бизнес-информатика, 2024–н.в.
@@ -186,3 +126,31 @@ JOIN, подзапросы и агрегатные функции; практи�
 - **Email:** [toxir.yuldoshev1983@gmail.com](mailto:toxir.yuldoshev1983@gmail.com)
 - **Telegram:** [@TokhirjonYuldoshev](https://t.me/TokhirjonYuldoshev)
 - **LinkedIn:** [tokhirjon-yuldoshev](https://www.linkedin.com/in/tokhirjon-yuldoshev/)
+
+---
+
+## QA Portfolio
+
+📁 **[QA Portfolio — Tokhirjon Yuldoshev](https://drive.google.com/drive/folders/1jOgOuHUcla3uYUn19Nq9-hPdJ7Xr0nen)**
+
+### Резюме
+- [Yuldoshev_Tokhirjon_QA_Resume.pdf](https://drive.google.com/file/d/1XcQ2rN5_pdjz16d8FeRCuf7ShzFOVSKK/view)
+- [Yuldoshev_Tokhirjon_QA_Resume.docx](https://drive.google.com/file/d/18LfLcU45SLe4LCb-tHMKUp3Otjr2U43Z/view)
+
+### Pizzaed — Manual QA + REST API
+- [01_Test_Plan_Pizzaed.docx](https://drive.google.com/file/d/15k9sKUtTIPpGfeWJInJ0y-y1pWpPAwGm/view)
+- [02_Checklist_Pizzaed_163_checks.docx](https://drive.google.com/file/d/19kPAyDkhjnGMDD6UsfZI0aGNmfVhI7D7/view)
+- [03_Test_Cases_Pizzaed_68_cases.docx](https://drive.google.com/file/d/1bKqsyOt3x6yEm5yLOcKcuNFYnSf9TwP3/view)
+- [04_Pizzaed_API_Postman_7_requests_11_tests.json](https://drive.google.com/file/d/15s96s0tLzJSFMU4XNQOzy27rM-kNWRZp/view)
+- [06_Postman_Runner_11_of_11.png](https://drive.google.com/file/d/1GcxOnm7WePykHxIefxn2ibdl3iZPrGUX/view)
+- [Pizzaed — Selected Bug Reports](https://docs.google.com/document/d/1SW8HppEPKJh7--DG1pnzdFJosgVcwpBKWLIWk_IS4ns/edit)
+- [Pizzaed_Final_Test_Cases_and_Bug_Reports](https://docs.google.com/spreadsheets/d/1f925eEyl7HwSNc_S33sPxJ2TY9XCEgX3cDU22LbzEGQ/edit)
+
+### PomidorQA — Automation QA
+- [pomidorqa-tests](https://github.com/TokhirjonYuldoshev/pomidorqa-tests)
+- [PomidorQA — Automation QA Overview](https://docs.google.com/document/d/1F5aDy-gw0pHkVuSmt2PHZuCsvTmBjffh3i5T_u64C7A/edit)
+- [coverage-matrix.md](https://github.com/TokhirjonYuldoshev/pomidorqa-tests/blob/main/docs/coverage-matrix.md)
+
+### Additional practice & certificates
+- [04_Certificates](https://drive.google.com/drive/folders/1iMNJ7UCQ5xz69Uy0mDM2vGnYydHUeNhJ)
+- [QA_Practice_Manual_SQL_TMS](https://docs.google.com/spreadsheets/d/1XXJAuQ9iydcu5j6hbRwBvCAy5JOgSdZAhk3hFj043SI/edit)
