@@ -2,7 +2,7 @@
   <img src="./assets/qa-engineer-banner.svg" alt="QA Engineer — Manual · Automation · API · Playwright" width="100%">
 </p>
 
-<h1 align="center">Тохиржон Йулдошев</h1>
+<h1 align="center">Tokhirjon Yuldoshev</h1>
 
 <p align="center">
   <strong>QA Engineer · Manual + Automation · API · Playwright · TypeScript</strong>
