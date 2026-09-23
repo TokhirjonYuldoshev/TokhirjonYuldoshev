@@ -18,6 +18,7 @@
 [LinkedIn](https://www.linkedin.com/in/tokhirjon-yuldoshev/) ·
 [Telegram](https://t.me/TokhirjonYuldoshev) ·
 [Email](mailto:toxir.yuldoshev1983@gmail.com)
+
 ---
 
 ## Инженерный подход
