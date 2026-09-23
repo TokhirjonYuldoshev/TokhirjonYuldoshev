@@ -1,10 +1,10 @@
 # Тохиржон Йулдошев
 
-## QA Automation Engineer · Playwright / TypeScript · API · CI/CD · Docker
+## QA Engineer · Manual + Automation · API · Playwright · TypeScript
 
-Автоматизирую проверку веб-приложений и API и строю CI-процессы, где результат можно **доказать, воспроизвести и быстро диагностировать**.
+Тестирую веб-приложения и REST API вручную и автоматизирую ключевые сценарии так, чтобы результат можно было **доказать, воспроизвести и быстро диагностировать**.
 
-Работаю с **Playwright + TypeScript**, REST API, SQL, GitHub Actions, Docker и Jenkins. Основной подход: требования связываются с конкретными проверками, функциональные и инфраструктурные сигналы разделяются, а retries не используются для маскировки нестабильности.
+Основной стек: **Playwright + TypeScript**, REST API, Postman, Chrome DevTools, SQL, Git и GitHub Actions. Docker и Jenkins использую в отдельных учебных инженерных проектах. Основной подход: требования связываются с конкретными проверками, функциональные и инфраструктурные сигналы разделяются, а retries не используются для маскировки нестабильности.
 
 **Санкт-Петербург · удалённый / гибридный / офисный формат**
 
@@ -18,6 +18,32 @@
 [LinkedIn](https://www.linkedin.com/in/tokhirjon-yuldoshev/) ·
 [Telegram](https://t.me/TokhirjonYuldoshev) ·
 [Email](mailto:toxir.yuldoshev1983@gmail.com)
+
+## QA Portfolio
+
+📁 **[Полное QA-портфолио на Google Drive](https://drive.google.com/drive/folders/1jOgOuHUcla3uYUn19Nq9-hPdJ7Xr0nen)**
+
+### Резюме
+- [Resume PDF](https://drive.google.com/file/d/1XcQ2rN5_pdjz16d8FeRCuf7ShzFOVSKK/view)
+- [Resume DOCX](https://drive.google.com/file/d/18LfLcU45SLe4LCb-tHMKUp3Otjr2U43Z/view)
+
+### Pizzaed — Manual QA + REST API
+- [Test Plan](https://drive.google.com/file/d/15k9sKUtTIPpGfeWJInJ0y-y1pWpPAwGm/view)
+- [Checklist — 163 checks](https://drive.google.com/file/d/19kPAyDkhjnGMDD6UsfZI0aGNmfVhI7D7/view)
+- [Test Cases — 68 cases](https://drive.google.com/file/d/1bKqsyOt3x6yEm5yLOcKcuNFYnSf9TwP3/view)
+- [Postman Collection — 7 requests / 11 tests](https://drive.google.com/file/d/15s96s0tLzJSFMU4XNQOzy27rM-kNWRZp/view)
+- [Postman Runner — 11/11 Passed](https://drive.google.com/file/d/1GcxOnm7WePykHxIefxn2ibdl3iZPrGUX/view)
+- [Selected Bug Reports](https://docs.google.com/document/d/1SW8HppEPKJh7--DG1pnzdFJosgVcwpBKWLIWk_IS4ns/edit)
+- [Final Test Cases & Bug Reports](https://docs.google.com/spreadsheets/d/1f925eEyl7HwSNc_S33sPxJ2TY9XCEgX3cDU22LbzEGQ/edit)
+
+### PomidorQA — Automation QA
+- [Repository](https://github.com/TokhirjonYuldoshev/pomidorqa-tests)
+- [Automation overview on Drive](https://docs.google.com/document/d/1F5aDy-gw0pHkVuSmt2PHZuCsvTmBjffh3i5T_u64C7A/edit)
+- [Coverage matrix](https://github.com/TokhirjonYuldoshev/pomidorqa-tests/blob/main/docs/coverage-matrix.md)
+
+### Additional practice & certificates
+- [Certificates](https://drive.google.com/drive/folders/1iMNJ7UCQ5xz69Uy0mDM2vGnYydHUeNhJ)
+- [Manual / SQL / TMS practice](https://docs.google.com/spreadsheets/d/1XXJAuQ9iydcu5j6hbRwBvCAy5JOgSdZAhk3hFj043SI/edit)
 
 ---
 
