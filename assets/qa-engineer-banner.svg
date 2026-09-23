@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="500" viewBox="0 0 1600 500" role="img" aria-labelledby="title desc">
+  <title id="title">QA Engineer — Tokhirjon Yuldoshev</title>
+  <desc id="desc">QA Engineer banner: Manual, Automation, API, Playwright, Quality, Evidence, CI.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#06101f"/>
+      <stop offset="0.55" stop-color="#091426"/>
+      <stop offset="1" stop-color="#020711"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#eef7ff"/>
+      <stop offset="0.24" stop-color="#d9efff"/>
+      <stop offset="0.52" stop-color="#3aa7ff"/>
+      <stop offset="1" stop-color="#1389ed"/>
+    </linearGradient>
+    <linearGradient id="terminal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#08111e"/>
+      <stop offset="1" stop-color="#050b14"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.6" fill="#168cff" opacity=".22"/>
+    </pattern>
+  </defs>
+
+  <rect width="1600" height="500" fill="url(#bg)"/>
+  <ellipse cx="1370" cy="420" rx="420" ry="220" fill="#0d6bd4" opacity=".08"/>
+  <path d="M0 412 C250 330 420 475 660 397 S1060 310 1600 405 L1600 500 L0 500 Z" fill="url(#dots)" opacity=".85"/>
+  <path d="M0 421 C250 348 420 480 660 405 S1070 326 1600 414" fill="none" stroke="#158ff7" stroke-opacity=".23" stroke-width="2"/>
+
+  <!-- terminal -->
+  <rect x="58" y="72" width="760" height="338" rx="18" fill="url(#terminal)" stroke="#1e6dc4" stroke-width="1.5"/>
+  <line x1="58" y1="116" x2="818" y2="116" stroke="#27405e" stroke-width="1"/>
+  <circle cx="86" cy="94" r="7" fill="#ff5f57"/>
+  <circle cx="110" cy="94" r="7" fill="#febc2e"/>
+  <circle cx="134" cy="94" r="7" fill="#28c840"/>
+  <text x="165" y="100" fill="#91a7c7" font-size="17" font-family="Consolas,Monaco,monospace">qa@pipeline:~/portfolio</text>
+  <text x="635" y="100" fill="#506684" font-size="15" font-family="Consolas,Monaco,monospace">quality / evidence / ci</text>
+
+  <g font-family="Consolas,Monaco,monospace" font-size="18">
+    <text x="85" y="152" fill="#8fa5c4">[QA]</text>
+    <text x="148" y="152" fill="#d4e1f5">Manual test design</text>
+    <text x="390" y="152" fill="#6ee7b7">163 checks · 68 cases</text>
+
+    <text x="85" y="190" fill="#4cc2ff">[API]</text>
+    <text x="148" y="190" fill="#d4e1f5">Postman collection</text>
+    <text x="390" y="190" fill="#6ee7b7">7 requests · 11 tests</text>
+
+    <text x="85" y="228" fill="#4cc2ff">[E2E]</text>
+    <text x="148" y="228" fill="#d4e1f5">Playwright regression</text>
+    <text x="390" y="228" fill="#6ee7b7">100 E2E · 3 browsers</text>
+
+    <text x="85" y="266" fill="#4cc2ff">[TRACE]</text>
+    <text x="170" y="266" fill="#d4e1f5">Requirements</text>
+    <text x="390" y="266" fill="#6ee7b7">50/50 audited · 45/50 automated</text>
+
+    <text x="85" y="304" fill="#4cc2ff">[CI]</text>
+    <text x="148" y="304" fill="#d4e1f5">GitHub Actions quality gates</text>
+    <text x="478" y="304" fill="#6ee7b7">retries=0</text>
+
+    <text x="85" y="342" fill="#4cc2ff">[EVIDENCE]</text>
+    <text x="205" y="342" fill="#d4e1f5">reports · traces · screenshots · video</text>
+
+    <line x1="85" y1="366" x2="790" y2="366" stroke="#19334f" stroke-width="1"/>
+    <text x="85" y="394" fill="#53e6a8">[PASS]</text>
+    <text x="165" y="394" fill="#53e6a8" font-weight="700">QUALITY SIGNAL READY</text>
+    <text x="405" y="394" fill="#b7c7dd">Evidence over assumptions.</text>
+  </g>
+
+  <!-- title -->
+  <text x="900" y="192" fill="url(#blue)" font-size="78" font-weight="800" font-family="Inter,Segoe UI,Arial,sans-serif" letter-spacing="2">QA ENGINEER</text>
+  <text x="904" y="246" fill="#a9bdd8" font-size="22" font-weight="600" font-family="Inter,Segoe UI,Arial,sans-serif" letter-spacing="5">MANUAL  •  AUTOMATION  •  API  •  PLAYWRIGHT</text>
+  <line x1="934" y1="286" x2="996" y2="286" stroke="#7187a5" stroke-width="2"/>
+  <text x="1021" y="294" fill="#748aa9" font-size="20" font-weight="600" font-family="Inter,Segoe UI,Arial,sans-serif" letter-spacing="6">QUALITY  •  EVIDENCE  •  CI</text>
+  <line x1="1450" y1="286" x2="1510" y2="286" stroke="#7187a5" stroke-width="2"/>
+
+  <rect x="1036" y="326" width="292" height="58" rx="29" fill="none" stroke="#239cff" stroke-width="2.5" filter="url(#glow)"/>
+  <circle cx="1070" cy="355" r="8" fill="#239cff"/>
+  <text x="1102" y="364" fill="#e9f4ff" font-size="22" font-weight="700" font-family="Inter,Segoe UI,Arial,sans-serif" letter-spacing="5">OPEN TO WORK</text>
+
+  <text x="1290" y="74" fill="#6f86a5" font-size="14" font-family="Inter,Segoe UI,Arial,sans-serif" letter-spacing="5">TEST  ·  AUTOMATE  ·  IMPROVE  ·  DELIVER</text>
+  <text x="932" y="430" fill="#526987" font-size="14" font-family="Inter,Segoe UI,Arial,sans-serif" letter-spacing="5">BETTER SOFTWARE. CLEARER EVIDENCE. STRONGER QUALITY.</text>
+</svg>
