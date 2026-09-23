@@ -139,7 +139,7 @@
 | API | REST API, Postman, JavaScript |
 | Data | SQL, PostgreSQL, MySQL |
 | QA / Debugging | Chrome DevTools, Charles Proxy |
-| Test Management | TestRail, TestIT, Jira, YouTrack |
+| TMS / Bug Tracking | TestRail, TestIT, тестовые прогоны, жизненный цикл дефекта |
 | CI / Reporting | GitHub Actions, Allure, Playwright HTML, JUnit, JSON |
 | Version Control | Git, GitHub |
 | Дополнительно | Docker, Jenkins, Pytest, Trivy, CycloneDX |
