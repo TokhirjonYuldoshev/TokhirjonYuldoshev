@@ -1,6 +1,27 @@
-# Тохиржон Йулдошев
+<p align="center">
+  <img src="./assets/qa-engineer-banner.svg" alt="QA Engineer — Manual · Automation · API · Playwright" width="100%">
+</p>
 
-## QA Engineer · Manual + Automation · API · Playwright · TypeScript
+<h1 align="center">Тохиржон Йулдошев</h1>
+
+<p align="center">
+  <strong>QA Engineer · Manual + Automation · API · Playwright · TypeScript</strong>
+</p>
+
+<p align="center">
+  <a href="https://drive.google.com/drive/folders/1jOgOuHUcla3uYUn19Nq9-hPdJ7Xr0nen">Portfolio</a> ·
+  <a href="https://github.com/TokhirjonYuldoshev/pomidorqa-tests">PomidorQA</a> ·
+  <a href="https://drive.google.com/file/d/1XcQ2rN5_pdjz16d8FeRCuf7ShzFOVSKK/view">Resume</a> ·
+  <a href="https://t.me/TokhirjonYuldoshev">Telegram</a> ·
+  <a href="https://www.linkedin.com/in/tokhirjon-yuldoshev/">LinkedIn</a>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Playwright-TypeScript-2EAD33?logo=playwright&logoColor=white" alt="Playwright TypeScript">
+  <img src="https://img.shields.io/badge/API-Postman-FF6C37?logo=postman&logoColor=white" alt="Postman API">
+  <img src="https://img.shields.io/badge/CI-GitHub_Actions-2088FF?logo=githubactions&logoColor=white" alt="GitHub Actions CI">
+  <img src="https://img.shields.io/badge/SQL-PostgreSQL-4169E1?logo=postgresql&logoColor=white" alt="SQL PostgreSQL">
+</p>
 
 Тестирую веб-приложения и REST API вручную и автоматизирую ключевые сценарии так, чтобы результат можно было **доказать, воспроизвести и быстро диагностировать**.
 
@@ -12,12 +33,6 @@
 [![PomidorQA Security](https://github.com/TokhirjonYuldoshev/pomidorqa-tests/actions/workflows/security.yml/badge.svg)](https://github.com/TokhirjonYuldoshev/pomidorqa-tests/actions/workflows/security.yml)
 [![Database Health](https://github.com/TokhirjonYuldoshev/qa-docker-monitor/actions/workflows/main.yml/badge.svg)](https://github.com/TokhirjonYuldoshev/qa-docker-monitor/actions/workflows/main.yml)
 [![Python & Docker CI](https://github.com/TokhirjonYuldoshev/my-docker-project/actions/workflows/ci.yml/badge.svg)](https://github.com/TokhirjonYuldoshev/my-docker-project/actions/workflows/ci.yml)
-
-[PomidorQA](https://github.com/TokhirjonYuldoshev/pomidorqa-tests) ·
-[Coverage matrix](https://github.com/TokhirjonYuldoshev/pomidorqa-tests/blob/main/docs/coverage-matrix.md) ·
-[LinkedIn](https://www.linkedin.com/in/tokhirjon-yuldoshev/) ·
-[Telegram](https://t.me/TokhirjonYuldoshev) ·
-[Email](mailto:toxir.yuldoshev1983@gmail.com)
 
 ---
 
