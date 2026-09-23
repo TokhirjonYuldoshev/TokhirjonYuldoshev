@@ -144,13 +144,11 @@ Pipeline с независимыми quality-сигналами для Python/Do
 - [04_Pizzaed_API_Postman_7_requests_11_tests.json](https://drive.google.com/file/d/15s96s0tLzJSFMU4XNQOzy27rM-kNWRZp/view)
 - [06_Postman_Runner_11_of_11.png](https://drive.google.com/file/d/1GcxOnm7WePykHxIefxn2ibdl3iZPrGUX/view)
 - [Pizzaed — Selected Bug Reports](https://docs.google.com/document/d/1SW8HppEPKJh7--DG1pnzdFJosgVcwpBKWLIWk_IS4ns/edit)
-- [Pizzaed_Final_Test_Cases_and_Bug_Reports](https://docs.google.com/spreadsheets/d/1f925eEyl7HwSNc_S33sPxJ2TY9XCEgX3cDU22LbzEGQ/edit)
 
 ### PomidorQA — Automation QA
 - [pomidorqa-tests](https://github.com/TokhirjonYuldoshev/pomidorqa-tests)
 - [PomidorQA — Automation QA Overview](https://docs.google.com/document/d/1F5aDy-gw0pHkVuSmt2PHZuCsvTmBjffh3i5T_u64C7A/edit)
 - [coverage-matrix.md](https://github.com/TokhirjonYuldoshev/pomidorqa-tests/blob/main/docs/coverage-matrix.md)
 
-### Additional practice & certificates
+### Certificates
 - [04_Certificates](https://drive.google.com/drive/folders/1iMNJ7UCQ5xz69Uy0mDM2vGnYydHUeNhJ)
-- [QA_Practice_Manual_SQL_TMS](https://docs.google.com/spreadsheets/d/1XXJAuQ9iydcu5j6hbRwBvCAy5JOgSdZAhk3hFj043SI/edit)
