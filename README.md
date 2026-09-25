@@ -11,7 +11,9 @@
 <p align="center">
   <a href="https://drive.google.com/drive/folders/1jOgOuHUcla3uYUn19Nq9-hPdJ7Xr0nen">Portfolio</a> ·
   <a href="https://github.com/TokhirjonYuldoshev/pomidorqa-tests">PomidorQA</a> ·
-  <a href="https://drive.google.com/file/d/1XcQ2rN5_pdjz16d8FeRCuf7ShzFOVSKK/view">Resume</a> ·
+  <a href="https://drive.google.com/file/d/1sFf6KpRQRxlrhqmqi_G3z0rfFplJzo3G/view">Resume RU</a> ·
+  <a href="https://drive.google.com/file/d/1J40-R5QbODzNcwXBoEmEsB0l2Xt5BvsB/view">Resume EN</a> ·
+  <a href="https://drive.google.com/drive/folders/1iMNJ7UCQ5xz69Uy0mDM2vGnYydHUeNhJ">Certificates</a> ·
   <a href="https://t.me/TokhirjonYuldoshev">Telegram</a> ·
   <a href="https://www.linkedin.com/in/tokhirjon-yuldoshev/">LinkedIn</a>
 </p>
@@ -167,7 +169,8 @@
 📁 **[QA Portfolio — Tokhirjon Yuldoshev](https://drive.google.com/drive/folders/1jOgOuHUcla3uYUn19Nq9-hPdJ7Xr0nen)**
 
 ### Resume
-- [Yuldoshev_Tokhirjon_QA_Resume.pdf](https://drive.google.com/file/d/1XcQ2rN5_pdjz16d8FeRCuf7ShzFOVSKK/view)
+- [Tokhirjon_Yuldoshev_QA_Resume_RU.pdf](https://drive.google.com/file/d/1sFf6KpRQRxlrhqmqi_G3z0rfFplJzo3G/view)
+- [Tokhirjon_Yuldoshev_QA_Resume_EN.pdf](https://drive.google.com/file/d/1J40-R5QbODzNcwXBoEmEsB0l2Xt5BvsB/view)
 
 ### Pizzaed
 - [Test_Plan_Pizzaed.docx](https://drive.google.com/file/d/15k9sKUtTIPpGfeWJInJ0y-y1pWpPAwGm/view)
@@ -183,6 +186,9 @@
 - [coverage-matrix.md](https://github.com/TokhirjonYuldoshev/pomidorqa-tests/blob/main/docs/coverage-matrix.md)
 
 ### Certificates
-- [AIQA — В QA за 60 дней](https://drive.google.com/file/d/1k7pf6YRm2xDV3A9cjuxK1Lmql9hrpjcp/view) · [Verify](https://aiqa.su/certificate/AIQA-2026-000001)
 - [AIQA — AQA за 60 дней · Playwright + TypeScript](https://drive.google.com/file/d/1vYN2JsDQ2uVomErAMfkKNmPhcHNkUc7k/view) · [Verify](https://aiqa.su/certificate/AIQA-AQA-2026-0006)
+- [AIQA — В QA за 60 дней](https://drive.google.com/file/d/1k7pf6YRm2xDV3A9cjuxK1Lmql9hrpjcp/view) · [Verify](https://aiqa.su/certificate/AIQA-2026-000001)
+- [Stepik — Software Testing PRO · 100%](https://drive.google.com/file/d/1eISI5UGttfVzaW4rmZhJghMgKawZqE_4/view)
+- [Stepik — SQL SELECT · 100%](https://drive.google.com/file/d/1VVywvrLB1yxrdORBGMO2EMBAa6ieYo7d/view)
+- [Stepik — QA Practical Trainers · с отличием](https://drive.google.com/file/d/1_ReHVhqniAbOmV28HV59De6OBSxryuBJ/view)
 - [All certificates](https://drive.google.com/drive/folders/1iMNJ7UCQ5xz69Uy0mDM2vGnYydHUeNhJ)
