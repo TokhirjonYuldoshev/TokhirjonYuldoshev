@@ -183,4 +183,6 @@
 - [coverage-matrix.md](https://github.com/TokhirjonYuldoshev/pomidorqa-tests/blob/main/docs/coverage-matrix.md)
 
 ### Certificates
-- [Certificates](https://drive.google.com/drive/folders/1iMNJ7UCQ5xz69Uy0mDM2vGnYydHUeNhJ)
+- [AIQA — В QA за 60 дней](https://drive.google.com/file/d/1k7pf6YRm2xDV3A9cjuxK1Lmql9hrpjcp/view) · [Verify](https://aiqa.su/certificate/AIQA-2026-000001)
+- [AIQA — AQA за 60 дней · Playwright + TypeScript](https://drive.google.com/file/d/1vYN2JsDQ2uVomErAMfkKNmPhcHNkUc7k/view) · [Verify](https://aiqa.su/certificate/AIQA-AQA-2026-0006)
+- [All certificates](https://drive.google.com/drive/folders/1iMNJ7UCQ5xz69Uy0mDM2vGnYydHUeNhJ)
