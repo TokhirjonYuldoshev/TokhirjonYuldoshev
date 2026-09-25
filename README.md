@@ -186,9 +186,9 @@
 - [coverage-matrix.md](https://github.com/TokhirjonYuldoshev/pomidorqa-tests/blob/main/docs/coverage-matrix.md)
 
 ### Certificates
-- [AIQA — AQA за 60 дней · Playwright + TypeScript](https://drive.google.com/file/d/1vYN2JsDQ2uVomErAMfkKNmPhcHNkUc7k/view) · [Verify](https://aiqa.su/certificate/AIQA-AQA-2026-0006)
-- [AIQA — В QA за 60 дней](https://drive.google.com/file/d/1k7pf6YRm2xDV3A9cjuxK1Lmql9hrpjcp/view) · [Verify](https://aiqa.su/certificate/AIQA-2026-000001)
-- [Stepik — Software Testing PRO · 100%](https://drive.google.com/file/d/1eISI5UGttfVzaW4rmZhJghMgKawZqE_4/view)
-- [Stepik — SQL SELECT · 100%](https://drive.google.com/file/d/1VVywvrLB1yxrdORBGMO2EMBAa6ieYo7d/view)
-- [Stepik — QA Practical Trainers · с отличием](https://drive.google.com/file/d/1_ReHVhqniAbOmV28HV59De6OBSxryuBJ/view)
-- [All certificates](https://drive.google.com/drive/folders/1iMNJ7UCQ5xz69Uy0mDM2vGnYydHUeNhJ)
+- [AIQA — AQA за 60 дней · Playwright + TypeScript](https://aiqa.su/certificate/AIQA-AQA-2026-0006)
+- [AIQA — В QA за 60 дней](https://aiqa.su/certificate/AIQA-2026-000001)
+- [Stepik — Software Testing PRO · 100%](https://stepik.org/cert/3095342)
+- [Stepik — SQL SELECT · 100%](https://stepik.org/cert/3112640)
+- [Stepik — QA Practical Trainers · с отличием](https://stepik.org/cert/3095365)
+- [All certificates — PDF copies](https://drive.google.com/drive/folders/1iMNJ7UCQ5xz69Uy0mDM2vGnYydHUeNhJ)
