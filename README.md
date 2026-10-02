@@ -11,6 +11,8 @@
 <p align="center">
   <a href="https://drive.google.com/drive/folders/1jOgOuHUcla3uYUn19Nq9-hPdJ7Xr0nen">Portfolio</a> ·
   <a href="https://github.com/TokhirjonYuldoshev/pomidorqa-tests">PomidorQA</a> ·
+  <a href="https://github.com/TokhirjonYuldoshev/BP-Diary-Android">BP Diary</a> ·
+  <a href="https://github.com/TokhirjonYuldoshev/WinUtil-RU">WinUtil RU</a> ·
   <a href="https://drive.google.com/file/d/1sFf6KpRQRxlrhqmqi_G3z0rfFplJzo3G/view">Resume RU</a> ·
   <a href="https://drive.google.com/file/d/1J40-R5QbODzNcwXBoEmEsB0l2Xt5BvsB/view">Resume EN</a> ·
   <a href="https://drive.google.com/drive/folders/1iMNJ7UCQ5xz69Uy0mDM2vGnYydHUeNhJ">Certificates</a> ·
@@ -96,6 +98,43 @@
 ## Дополнительные инженерные проекты
 
 <details>
+<summary><b>BP Diary — Android · privacy · release engineering</b></summary>
+
+Android-приложение для структурированного дневника артериального давления с local-first хранением, аналитикой, напоминаниями, PDF-отчётами и защищёнными резервными копиями.
+
+- текущий stable: **V18 / 5.8.1**;
+- Android build и mobile UI regression в GitHub Actions;
+- защищённый Full Backup: PBKDF2-SHA-256 + AES-GCM-256;
+- App Lock через системную Android-аутентификацию и Screen Privacy через `FLAG_SECURE`;
+- русский, English и O‘zbekcha (Lotin);
+- формализованный release gate с отдельными build/UI quality checks.
+
+[Repository](https://github.com/TokhirjonYuldoshev/BP-Diary-Android) ·
+[Stable Release](https://github.com/TokhirjonYuldoshev/BP-Diary-Android/releases/tag/v5.8.1)
+
+**Stack:** Android · JavaScript · Playwright · GitHub Actions · Security · Release Engineering
+
+</details>
+
+<details>
+<summary><b>WinUtil RU — Windows localization · upstream parity</b></summary>
+
+Независимая русская локализация Chris Titus Tech WinUtil с сохранением оригинальной backend-логики исходного релиза.
+
+- stable основан на **exact official tag 26.08.19**;
+- strict parity-gate проверяет protected upstream paths и отделяет разрешённые UI/localization differences от backend;
+- `main` — синхронизированная линия оригинального WinUtil, `russian` — русская редакция;
+- stable публикуется только после CI, ручного Windows QA и отдельного решения владельца;
+- сохранены исходная MIT License и авторство CT Tech Group LLC.
+
+[Repository](https://github.com/TokhirjonYuldoshev/WinUtil-RU) ·
+[Technical Audit](https://github.com/TokhirjonYuldoshev/WinUtil-RU/blob/russian/docs/AUDIT-RU.md)
+
+**Stack:** PowerShell · Windows · GitHub Actions · Localization · Upstream Parity
+
+</details>
+
+<details>
 <summary><b>QA Docker Monitor — PostgreSQL health & contract monitoring</b></summary>
 
 Система мониторинга PostgreSQL, где health подтверждается реальной записью и точным read-back текущего запуска.
@@ -132,6 +171,21 @@
 
 ---
 
+## Open Source Contributions
+
+### [Chris Titus Tech — WinUtil · PR #5111](https://github.com/ChrisTitusTech/winutil/pull/5111)
+
+Внёс документационное исправление в официальный upstream-репозиторий **ChrisTitusTech/winutil**.
+
+- исправлено противоречие в FAQ о поддержке Windows LTSC;
+- формулировка приведена в соответствие с текущей политикой поддержки Windows 11;
+- изменение прошло upstream review и было **merged** в официальный проект;
+- PR связан с [Issue #5117](https://github.com/ChrisTitusTech/winutil/issues/5117), который после merge закрыт как completed.
+
+Это отдельный upstream contribution и не смешивается с локализационными изменениями **WinUtil RU**.
+
+---
+
 ## Технологии
 
 | Направление | Инструменты |
@@ -144,7 +198,7 @@
 | TMS / Bug Tracking | TestRail, TestIT, тестовые прогоны, жизненный цикл дефекта |
 | CI / Reporting | GitHub Actions, Allure, Playwright HTML, JUnit, JSON |
 | Version Control | Git, GitHub |
-| Дополнительно | Docker, Jenkins, Pytest, Trivy, CycloneDX |
+| Дополнительно | Docker, Jenkins, Pytest, PowerShell, Android, Trivy, CycloneDX |
 
 <details>
 <summary><b>Образование</b></summary>
