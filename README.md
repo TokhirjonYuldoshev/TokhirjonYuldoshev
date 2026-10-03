@@ -61,6 +61,26 @@
 
 ---
 
+### [BP Diary — Android · QA · Privacy & Release Engineering](https://github.com/TokhirjonYuldoshev/BP-Diary-Android)
+
+Android-приложение для структурированного дневника артериального давления с **local-first** хранением, аналитикой, напоминаниями, PDF-отчётами и защищёнными резервными копиями.
+
+- текущий stable: **V18 / 5.8.1**;
+- Android build и mobile UI regression в GitHub Actions;
+- защищённый Full Backup: PBKDF2-SHA-256 + AES-GCM-256;
+- App Lock через системную Android-аутентификацию и Screen Privacy через `FLAG_SECURE`;
+- русский, English и O‘zbekcha (Lotin);
+- формализованный release gate с отдельными build/UI quality checks.
+
+[Repository](https://github.com/TokhirjonYuldoshev/BP-Diary-Android) ·
+[Stable Release](https://github.com/TokhirjonYuldoshev/BP-Diary-Android/releases/tag/v5.8.1) ·
+[Security](https://github.com/TokhirjonYuldoshev/BP-Diary-Android/blob/main/SECURITY.md) ·
+[Architecture](https://github.com/TokhirjonYuldoshev/BP-Diary-Android/blob/main/ARCHITECTURE.md)
+
+**Stack:** Android · JavaScript · Playwright · GitHub Actions · Security · Release Engineering
+
+---
+
 ### [Pizzaed — Manual QA + REST API](https://drive.google.com/drive/folders/1HWGeywjJ2qnSpFE4awpLrqIGwLfKhCHu)
 
 Учебный интернет-магазин: каталог, фильтрация, корзина, промокоды, доставка и оформление заказа.
@@ -84,6 +104,26 @@
 
 ---
 
+## Open Source Contributions
+
+### [Chris Titus Tech — WinUtil · PR #5111](https://github.com/ChrisTitusTech/winutil/pull/5111)
+
+Внёс документационное исправление в официальный upstream-репозиторий **ChrisTitusTech/winutil**.
+
+- исправлено противоречие в FAQ о поддержке Windows LTSC;
+- формулировка приведена в соответствие с текущей политикой поддержки Windows 11;
+- изменение прошло upstream review и было **merged** в официальный проект;
+- PR связан с [Issue #5117](https://github.com/ChrisTitusTech/winutil/issues/5117), закрытым после принятия изменения.
+
+Отдельно развиваю [**WinUtil RU**](https://github.com/TokhirjonYuldoshev/WinUtil-RU) — независимую русскую локализацию WinUtil со строгим контролем upstream parity. Это отдельный проект: upstream contribution и локализационные изменения не смешиваются.
+
+[WinUtil RU Repository](https://github.com/TokhirjonYuldoshev/WinUtil-RU) ·
+[Technical Audit](https://github.com/TokhirjonYuldoshev/WinUtil-RU/blob/russian/docs/AUDIT-RU.md)
+
+**Stack:** PowerShell · Windows · GitHub Actions · Localization · Upstream Parity
+
+---
+
 ## Инженерные практики
 
 - **Requirements → Test Cases → Evidence:** связываю требования с конкретными проверками и результатами.
@@ -96,43 +136,6 @@
 ---
 
 ## Дополнительные инженерные проекты
-
-<details>
-<summary><b>BP Diary — Android · privacy · release engineering</b></summary>
-
-Android-приложение для структурированного дневника артериального давления с local-first хранением, аналитикой, напоминаниями, PDF-отчётами и защищёнными резервными копиями.
-
-- текущий stable: **V18 / 5.8.1**;
-- Android build и mobile UI regression в GitHub Actions;
-- защищённый Full Backup: PBKDF2-SHA-256 + AES-GCM-256;
-- App Lock через системную Android-аутентификацию и Screen Privacy через `FLAG_SECURE`;
-- русский, English и O‘zbekcha (Lotin);
-- формализованный release gate с отдельными build/UI quality checks.
-
-[Repository](https://github.com/TokhirjonYuldoshev/BP-Diary-Android) ·
-[Stable Release](https://github.com/TokhirjonYuldoshev/BP-Diary-Android/releases/tag/v5.8.1)
-
-**Stack:** Android · JavaScript · Playwright · GitHub Actions · Security · Release Engineering
-
-</details>
-
-<details>
-<summary><b>WinUtil RU — Windows localization · upstream parity</b></summary>
-
-Независимая русская локализация Chris Titus Tech WinUtil с сохранением оригинальной backend-логики исходного релиза.
-
-- stable основан на **exact official tag 26.08.19**;
-- strict parity-gate проверяет protected upstream paths и отделяет разрешённые UI/localization differences от backend;
-- `main` — синхронизированная линия оригинального WinUtil, `russian` — русская редакция;
-- stable публикуется только после CI, ручного Windows QA и отдельного решения владельца;
-- сохранены исходная MIT License и авторство CT Tech Group LLC.
-
-[Repository](https://github.com/TokhirjonYuldoshev/WinUtil-RU) ·
-[Technical Audit](https://github.com/TokhirjonYuldoshev/WinUtil-RU/blob/russian/docs/AUDIT-RU.md)
-
-**Stack:** PowerShell · Windows · GitHub Actions · Localization · Upstream Parity
-
-</details>
 
 <details>
 <summary><b>QA Docker Monitor — PostgreSQL health & contract monitoring</b></summary>
@@ -171,20 +174,6 @@ Android-приложение для структурированного дне�
 
 ---
 
-## Open Source Contributions
-
-### [Chris Titus Tech — WinUtil · PR #5111](https://github.com/ChrisTitusTech/winutil/pull/5111)
-
-Внёс документационное исправление в официальный upstream-репозиторий **ChrisTitusTech/winutil**.
-
-- исправлено противоречие в FAQ о поддержке Windows LTSC;
-- формулировка приведена в соответствие с текущей политикой поддержки Windows 11;
-- изменение прошло upstream review и было **merged** в официальный проект;
-- PR связан с [Issue #5117](https://github.com/ChrisTitusTech/winutil/issues/5117), который после merge закрыт как completed.
-
-Это отдельный upstream contribution и не смешивается с локализационными изменениями **WinUtil RU**.
-
----
 
 ## Технологии
 
@@ -193,12 +182,14 @@ Android-приложение для структурированного дне�
 | Manual QA | Test design, Checklists, Test Cases, Bug Reports |
 | Automation | Playwright, TypeScript |
 | API | REST API, Postman, JavaScript |
+| Mobile / Release | Android, mobile UI regression, release gates |
 | Data | SQL, PostgreSQL, MySQL |
 | QA / Debugging | Chrome DevTools, Charles Proxy |
 | TMS / Bug Tracking | TestRail, TestIT, тестовые прогоны, жизненный цикл дефекта |
 | CI / Reporting | GitHub Actions, Allure, Playwright HTML, JUnit, JSON |
+| Platform / Scripting | PowerShell, Docker, Jenkins, Pytest |
+| Security / Supply Chain | Trivy, CycloneDX SBOM |
 | Version Control | Git, GitHub |
-| Дополнительно | Docker, Jenkins, Pytest, PowerShell, Android, Trivy, CycloneDX |
 
 <details>
 <summary><b>Образование</b></summary>
@@ -220,29 +211,9 @@ Android-приложение для структурированного дне�
 
 ## QA Portfolio
 
-📁 **[QA Portfolio — Tokhirjon Yuldoshev](https://drive.google.com/drive/folders/1jOgOuHUcla3uYUn19Nq9-hPdJ7Xr0nen)**
+📁 **[Open full QA Portfolio](https://drive.google.com/drive/folders/1jOgOuHUcla3uYUn19Nq9-hPdJ7Xr0nen)**
 
-### Resume
-- [Tokhirjon_Yuldoshev_QA_Resume_RU.pdf](https://drive.google.com/file/d/1sFf6KpRQRxlrhqmqi_G3z0rfFplJzo3G/view)
-- [Tokhirjon_Yuldoshev_QA_Resume_EN.pdf](https://drive.google.com/file/d/1J40-R5QbODzNcwXBoEmEsB0l2Xt5BvsB/view)
-
-### Pizzaed
-- [Test_Plan_Pizzaed.docx](https://drive.google.com/file/d/15k9sKUtTIPpGfeWJInJ0y-y1pWpPAwGm/view)
-- [Checklist_Pizzaed_163_checks.docx](https://drive.google.com/file/d/19kPAyDkhjnGMDD6UsfZI0aGNmfVhI7D7/view)
-- [Test_Cases_Pizzaed_68_cases.docx](https://drive.google.com/file/d/1bKqsyOt3x6yEm5yLOcKcuNFYnSf9TwP3/view)
-- [Pizzaed_API_Postman_7_requests_11_tests.json](https://drive.google.com/file/d/15s96s0tLzJSFMU4XNQOzy27rM-kNWRZp/view)
-- [Postman_Runner_11_of_11.png](https://drive.google.com/file/d/1GcxOnm7WePykHxIefxn2ibdl3iZPrGUX/view)
-- [Pizzaed — Selected Bug Reports](https://docs.google.com/document/d/1SW8HppEPKJh7--DG1pnzdFJosgVcwpBKWLIWk_IS4ns/edit)
-
-### PomidorQA
-- [pomidorqa-tests](https://github.com/TokhirjonYuldoshev/pomidorqa-tests)
-- [Automation QA Overview](https://docs.google.com/document/d/1F5aDy-gw0pHkVuSmt2PHZuCsvTmBjffh3i5T_u64C7A/edit)
-- [coverage-matrix.md](https://github.com/TokhirjonYuldoshev/pomidorqa-tests/blob/main/docs/coverage-matrix.md)
-
-### Certificates
-- [AIQA — AQA за 60 дней · Playwright + TypeScript](https://aiqa.su/certificate/AIQA-AQA-2026-0006)
-- [AIQA — В QA за 60 дней](https://aiqa.su/certificate/AIQA-2026-000001)
-- [Stepik — Software Testing PRO · 100%](https://stepik.org/cert/3095342)
-- [Stepik — SQL SELECT · 100%](https://stepik.org/cert/3112640)
-- [Stepik — QA Practical Trainers · с отличием](https://stepik.org/cert/3095365)
-- [All certificates — PDF copies](https://drive.google.com/drive/folders/1iMNJ7UCQ5xz69Uy0mDM2vGnYydHUeNhJ)
+- **Resume:** [RU](https://drive.google.com/file/d/1sFf6KpRQRxlrhqmqi_G3z0rfFplJzo3G/view) · [EN](https://drive.google.com/file/d/1J40-R5QbODzNcwXBoEmEsB0l2Xt5BvsB/view)
+- **Manual QA / API:** [Pizzaed](https://drive.google.com/drive/folders/1HWGeywjJ2qnSpFE4awpLrqIGwLfKhCHu)
+- **Automation QA:** [PomidorQA](https://github.com/TokhirjonYuldoshev/pomidorqa-tests) · [Coverage Matrix](https://github.com/TokhirjonYuldoshev/pomidorqa-tests/blob/main/docs/coverage-matrix.md)
+- **Certificates:** [AIQA AQA](https://aiqa.su/certificate/AIQA-AQA-2026-0006) · [AIQA QA](https://aiqa.su/certificate/AIQA-2026-000001) · [Stepik Testing](https://stepik.org/cert/3095342) · [Stepik SQL](https://stepik.org/cert/3112640) · [Stepik QA Practice](https://stepik.org/cert/3095365) · [PDF copies](https://drive.google.com/drive/folders/1iMNJ7UCQ5xz69Uy0mDM2vGnYydHUeNhJ)
