@@ -9,6 +9,7 @@
 </p>
 
 <p align="center">
+  <a href="https://yty.toxir-yuldoshev1983.chatgpt.site/">YTY QA Portfolio</a> ·
   <a href="https://drive.google.com/drive/folders/1jOgOuHUcla3uYUn19Nq9-hPdJ7Xr0nen">Portfolio</a> ·
   <a href="https://github.com/TokhirjonYuldoshev/pomidorqa-tests">PomidorQA</a> ·
   <a href="https://github.com/TokhirjonYuldoshev/BP-Diary-Android">BP Diary</a> ·
@@ -65,7 +66,7 @@
 
 Android-приложение для структурированного дневника артериального давления с **local-first** хранением, аналитикой, напоминаниями, PDF-отчётами и защищёнными резервными копиями.
 
-- текущий stable: **V18 / 5.8.1**;
+- текущий stable: **V18 / 5.8.2**;
 - Android build и mobile UI regression в GitHub Actions;
 - защищённый Full Backup: PBKDF2-SHA-256 + AES-GCM-256;
 - App Lock через системную Android-аутентификацию и Screen Privacy через `FLAG_SECURE`;
@@ -73,7 +74,7 @@ Android-приложение для структурированного дне�
 - формализованный release gate с отдельными build/UI quality checks.
 
 [Repository](https://github.com/TokhirjonYuldoshev/BP-Diary-Android) ·
-[Stable Release](https://github.com/TokhirjonYuldoshev/BP-Diary-Android/releases/tag/v5.8.1) ·
+[Stable Release](https://github.com/TokhirjonYuldoshev/BP-Diary-Android/releases/tag/v5.8.2) ·
 [Security](https://github.com/TokhirjonYuldoshev/BP-Diary-Android/blob/main/SECURITY.md) ·
 [Architecture](https://github.com/TokhirjonYuldoshev/BP-Diary-Android/blob/main/ARCHITECTURE.md)
 
