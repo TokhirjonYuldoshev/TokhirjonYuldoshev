@@ -9,7 +9,6 @@
 </p>
 
 <p align="center">
-  <a href="https://yty.toxir-yuldoshev1983.chatgpt.site/">YTY QA Portfolio</a> ·
   <a href="https://drive.google.com/drive/folders/1jOgOuHUcla3uYUn19Nq9-hPdJ7Xr0nen">Portfolio</a> ·
   <a href="https://github.com/TokhirjonYuldoshev/pomidorqa-tests">PomidorQA</a> ·
   <a href="https://github.com/TokhirjonYuldoshev/BP-Diary-Android">BP Diary</a> ·
